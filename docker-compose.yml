@@ -1,0 +1,49 @@
+version: '3.7'
+services:
+  db_sigim:
+    build:
+      context: . 
+      dockerfile: Dockerfile_db
+    container_name: db_sigim
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: password1234%
+    volumes:
+      - ./postgres:/var/lib/postgresql/data
+    ports:
+      - 5436:5432
+    networks:
+      - sigim_net
+
+  # api_sigim:
+  #   build: .
+  #   container_name: api_sigim
+  #   restart: always
+  #   volumes:
+  #     - ./sigim-api:/app
+  #   ports:
+  #     - 3000:3000
+  #   depends_on:
+  #     - db_sigim
+  #   networks:
+  #     - sigim_net
+
+  # front_sigim:
+  #   build:
+  #     context: . 
+  #     dockerfile: Dockerfile_app
+  #   container_name: front_sigim
+  #   restart: always
+  #   volumes:
+  #     - ./sigim-front:/app
+  #     - /app/node_modules
+  #   ports:
+  #     - 8080:8080
+  #   depends_on:
+  #     - api_sigim
+  #   networks:
+  #     - sigim_net
+
+networks: 
+  sigim_net:
+    driver: bridge

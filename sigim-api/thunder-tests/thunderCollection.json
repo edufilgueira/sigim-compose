@@ -1,0 +1,411 @@
+[
+  {
+    "_id": "9330b9b5-c698-440a-83b4-c63e31778721",
+    "colName": "Users",
+    "created": "2022-11-02T17:21:02.413Z",
+    "sortNum": 10000,
+    "folders": []
+  },
+  {
+    "_id": "b2325616-63db-418e-b0ee-62667f01cf05",
+    "colName": "AbilityPermissions",
+    "created": "2022-11-03T18:16:37.958Z",
+    "sortNum": 20000,
+    "folders": []
+  },
+  {
+    "_id": "db622834-24cc-4462-a707-f01b271056c6",
+    "colName": "AbilityProfiles",
+    "created": "2022-11-03T18:21:21.233Z",
+    "sortNum": 30000,
+    "folders": []
+  },
+  {
+    "_id": "1df2628f-d9e1-4ac3-b8fc-f84b5d930036",
+    "colName": "Auth",
+    "created": "2022-11-03T18:22:54.689Z",
+    "sortNum": 40000,
+    "folders": [
+      {
+        "_id": "e596e94a-420d-46fe-82fc-3c42eced59ab",
+        "name": "Password",
+        "containerId": "",
+        "created": "2022-11-03T18:22:54.705Z",
+        "sortNum": 10000
+      },
+      {
+        "_id": "0ab58bd3-483c-4d18-b1b3-b7367442e328",
+        "name": "Session",
+        "containerId": "",
+        "created": "2022-11-03T18:22:54.706Z",
+        "sortNum": 20000
+      },
+      {
+        "_id": "bf1c3df5-f545-4e6c-8bfb-2f2333137b00",
+        "name": "Validate",
+        "containerId": "",
+        "created": "2022-11-03T18:22:54.707Z",
+        "sortNum": 30000
+      },
+      {
+        "_id": "575c6fc0-371b-49b4-b357-b651c4f021c4",
+        "name": "User",
+        "containerId": "",
+        "created": "2022-11-03T18:22:54.708Z",
+        "sortNum": 40000
+      }
+    ]
+  },
+  {
+    "_id": "f24c0ddb-3144-4f24-b29c-2aa4e50acaf7",
+    "colName": "Menus",
+    "created": "2022-11-03T18:24:29.281Z",
+    "sortNum": 60000,
+    "folders": []
+  },
+  {
+    "_id": "a2f20805-001e-4f67-9421-d64489fb6f91",
+    "colName": "Cruds",
+    "created": "2022-11-09T19:59:04.656Z",
+    "sortNum": 70000,
+    "folders": [
+      {
+        "_id": "47346311-f609-445f-bde5-fc53f44e0df6",
+        "name": "CrimeType",
+        "containerId": "",
+        "created": "2022-11-09T19:59:04.663Z",
+        "sortNum": 10000
+      },
+      {
+        "_id": "68223edc-0bb1-46ae-b3be-8b74ac0e1389",
+        "name": "RelationshipDegrees",
+        "containerId": "",
+        "created": "2022-11-09T19:59:04.664Z",
+        "sortNum": 20000
+      },
+      {
+        "_id": "8d81898e-f9cb-4065-a3dd-afd32af0cc55",
+        "name": "ViolenceTypes",
+        "containerId": "",
+        "created": "2022-11-09T19:59:04.665Z",
+        "sortNum": 30000
+      },
+      {
+        "_id": "be00782e-311d-414b-aefd-f372b1ad0c37",
+        "name": "ProtectiveMeasures",
+        "containerId": "",
+        "created": "2022-11-09T19:59:04.666Z",
+        "sortNum": 40000
+      },
+      {
+        "_id": "881ef6b6-5cc6-4f4f-9724-84c224f6e25a",
+        "name": "ForwardingProtocols",
+        "containerId": "",
+        "created": "2022-11-09T19:59:04.667Z",
+        "sortNum": 50000
+      },
+      {
+        "_id": "0f8fb3f3-e46f-4f43-9156-492885aad45a",
+        "name": "Relationships",
+        "containerId": "",
+        "created": "2022-11-09T19:59:04.668Z",
+        "sortNum": 310000
+      },
+      {
+        "_id": "2b60d939-3411-47d1-9d0a-4883cb6b72df",
+        "name": "PeopleContacts",
+        "containerId": "",
+        "created": "2022-11-09T19:59:04.669Z",
+        "sortNum": 305000
+      },
+      {
+        "_id": "ed50599e-7e6d-4b33-92f6-d7b9dabd1c74",
+        "name": "AccompanimentTypes",
+        "containerId": "",
+        "created": "2022-11-09T19:59:04.670Z",
+        "sortNum": 80000
+      },
+      {
+        "_id": "33f11ee2-99ba-48bb-9941-196b39644856",
+        "name": "Lawsuits",
+        "containerId": "",
+        "created": "2022-11-09T19:59:04.671Z",
+        "sortNum": 90000
+      },
+      {
+        "_id": "2a8ee7e8-c8b6-4798-afd2-e517cc709f86",
+        "name": "IncidentReports",
+        "containerId": "",
+        "created": "2022-11-09T19:59:04.672Z",
+        "sortNum": 100000
+      },
+      {
+        "_id": "fcf04d98-70ac-47ea-97c1-9edf0a10f40e",
+        "name": "ViolenceMotivations",
+        "containerId": "",
+        "created": "2022-11-09T19:59:04.673Z",
+        "sortNum": 110000
+      },
+      {
+        "_id": "8f0b9c8a-1987-4577-ab88-d74d41a12665",
+        "name": "PeopleAddresses",
+        "containerId": "",
+        "created": "2022-11-09T19:59:04.674Z",
+        "sortNum": 300000
+      },
+      {
+        "_id": "3433e7e3-d351-4a34-9c4a-a7217359d87c",
+        "name": "Breeds",
+        "containerId": "",
+        "created": "2022-11-09T19:59:04.675Z",
+        "sortNum": 130000
+      },
+      {
+        "_id": "365500da-00b0-4e20-b22a-0d0f4a1c6d85",
+        "name": "SexualOrientations",
+        "containerId": "",
+        "created": "2022-11-09T19:59:04.676Z",
+        "sortNum": 140000
+      },
+      {
+        "_id": "2d3d9860-4af6-4f59-b9d7-977ec840dd6c",
+        "name": "Genders",
+        "containerId": "",
+        "created": "2022-11-09T19:59:04.677Z",
+        "sortNum": 150000
+      },
+      {
+        "_id": "bd721872-ce92-4e42-9899-5ccdd54eb1ef",
+        "name": "Scholarities",
+        "containerId": "",
+        "created": "2022-11-09T19:59:04.678Z",
+        "sortNum": 160000
+      },
+      {
+        "_id": "1c3335eb-df40-4c7c-b457-90243b43f6c1",
+        "name": "CivilStatuses",
+        "containerId": "",
+        "created": "2022-11-09T19:59:04.679Z",
+        "sortNum": 170000
+      },
+      {
+        "_id": "4eab1b5f-c7ee-4746-929d-b43d9a23d2d3",
+        "name": "SkinColor",
+        "containerId": "",
+        "created": "2022-11-09T19:59:04.680Z",
+        "sortNum": 180000
+      },
+      {
+        "_id": "7eb4fca1-f875-4e52-8e65-805899c1fc20",
+        "name": "GenderIdentities",
+        "containerId": "",
+        "created": "2022-11-09T19:59:04.681Z",
+        "sortNum": 190000
+      },
+      {
+        "_id": "e081a4ae-05de-452b-b033-5111bd6cde33",
+        "name": "ContactTypes",
+        "containerId": "",
+        "created": "2022-11-09T19:59:04.682Z",
+        "sortNum": 200000
+      },
+      {
+        "_id": "cf1c0a40-67d3-406a-b62d-33a1744d965b",
+        "name": "Ethnicities",
+        "containerId": "",
+        "created": "2022-11-09T19:59:04.683Z",
+        "sortNum": 210000
+      },
+      {
+        "_id": "a08e2bdf-8448-4239-8cf9-05cf643f84b6",
+        "name": "Sectorials",
+        "containerId": "",
+        "created": "2022-11-09T19:59:04.684Z",
+        "sortNum": 272500
+      },
+      {
+        "_id": "ddbf5b68-8f7e-4c46-ba1c-17c3d0c944d9",
+        "name": "Neighborhoods",
+        "containerId": "",
+        "created": "2022-11-09T19:59:04.685Z",
+        "sortNum": 255000
+      },
+      {
+        "_id": "676f99dd-accb-49f6-a246-1a35013a060d",
+        "name": "States",
+        "containerId": "",
+        "created": "2022-11-09T19:59:04.686Z",
+        "sortNum": 240000
+      },
+      {
+        "_id": "2eefb7ed-66ea-4faf-a9f0-a4fb76777016",
+        "name": "Cities",
+        "containerId": "",
+        "created": "2022-11-09T19:59:04.687Z",
+        "sortNum": 250000
+      },
+      {
+        "_id": "de190bc0-20b5-4df7-9edf-910a0d5e3b5c",
+        "name": "Communities",
+        "containerId": "",
+        "created": "2022-11-09T19:59:04.688Z",
+        "sortNum": 260000
+      },
+      {
+        "_id": "c0f5ff51-7b83-4d59-ac04-140f21eafe08",
+        "name": "NeighborhoodCommunities",
+        "containerId": "",
+        "created": "2022-11-09T19:59:04.689Z",
+        "sortNum": 270000
+      },
+      {
+        "_id": "0240c916-4c8f-4cd0-ad2e-742968eacf86",
+        "name": "Facilities",
+        "containerId": "",
+        "created": "2022-11-09T19:59:04.690Z",
+        "sortNum": 280000
+      },
+      {
+        "_id": "5d70497e-590b-49e5-9a18-c0c27672058a",
+        "name": "People",
+        "containerId": "",
+        "created": "2022-11-09T19:59:04.691Z",
+        "sortNum": 290000
+      },
+      {
+        "_id": "2be81c99-7cc3-4dfa-a82b-5e4e90e8a27b",
+        "name": "ProtectiveMeasureTypes",
+        "containerId": "",
+        "created": "2022-11-11T14:58:22.803Z",
+        "sortNum": 35000
+      },
+      {
+        "_id": "a4eb9af3-0f79-4501-aab8-c61afe171f96",
+        "name": "ProtectiveMeasureRequesteds",
+        "containerId": "",
+        "created": "2022-11-11T15:01:32.836Z",
+        "sortNum": 43750
+      },
+      {
+        "_id": "103d4cdc-d2fe-4483-aaf6-64048d939e12",
+        "name": "FacilityTypes",
+        "containerId": "",
+        "created": "2022-11-11T15:41:53.835Z",
+        "sortNum": 275000
+      },
+      {
+        "_id": "a44e1723-b7f9-4e32-b0f0-8e20e2691395",
+        "name": "AccompanimentTypeFacilities",
+        "containerId": "",
+        "created": "2022-11-11T15:48:15.837Z",
+        "sortNum": 82500
+      },
+      {
+        "_id": "6388cdbc-5d24-4cd0-b540-f2c63e9c881a",
+        "name": "SourceSystems",
+        "containerId": "",
+        "created": "2022-11-19T11:53:21.266Z",
+        "sortNum": 5000
+      },
+      {
+        "_id": "fab5060e-6f53-4e88-b77e-b7249f21a8b4",
+        "name": "Users",
+        "containerId": "",
+        "created": "2022-11-22T17:51:02.087Z",
+        "sortNum": 320000
+      },
+      {
+        "_id": "4b73097d-0110-463e-b402-75beee7e97cb",
+        "name": "RiskLevels",
+        "containerId": "",
+        "created": "2022-11-23T00:45:05.539Z",
+        "sortNum": 7500
+      },
+      {
+        "_id": "da6f19cf-0838-4e97-a5da-ca301046cd05",
+        "name": "Denunciation",
+        "containerId": "",
+        "created": "2023-01-09T18:56:59.146Z",
+        "sortNum": 6250
+      },
+      {
+        "_id": "dd524459-cb87-46b2-add2-21803a6d6604",
+        "name": "DependencyType",
+        "containerId": "",
+        "created": "2023-01-10T14:00:27.233Z",
+        "sortNum": 15000
+      },
+      {
+        "_id": "3e368ff3-736a-4112-aafa-154768319a2d",
+        "name": "HandicapType",
+        "containerId": "",
+        "created": "2023-01-10T16:44:32.045Z",
+        "sortNum": 155000
+      },
+      {
+        "_id": "e9b6840d-b823-422d-9b04-b40f8296d1e1",
+        "name": "HandicapPeople",
+        "containerId": "",
+        "created": "2023-01-13T13:24:09.187Z",
+        "sortNum": 157500
+      },
+      {
+        "_id": "9fef76a0-7bab-4b08-93aa-9983ad87d5bb",
+        "name": "HousingSituation",
+        "containerId": "",
+        "created": "2023-01-18T14:07:51.831Z",
+        "sortNum": 156250
+      }
+    ]
+  },
+  {
+    "_id": "ea28f1b4-6292-4eab-9900-65edaf862c70",
+    "colName": "Dashboards",
+    "created": "2022-11-12T14:41:28.559Z",
+    "sortNum": 80000,
+    "folders": [
+      {
+        "_id": "4b47015f-aa3b-44bc-9aa1-26e853e65596",
+        "name": "Mulher",
+        "containerId": "",
+        "created": "2022-11-12T14:41:44.833Z",
+        "sortNum": 10000
+      },
+      {
+        "_id": "a98f9352-88bb-4266-8e2d-2919b8e09e90",
+        "name": "Boletim de Ocorrência",
+        "containerId": "4b47015f-aa3b-44bc-9aa1-26e853e65596",
+        "created": "2022-11-12T14:46:46.976Z",
+        "sortNum": 10000
+      },
+      {
+        "_id": "41f23020-1c04-43d0-89b4-3cb5cc92143c",
+        "name": "Processo Judicial",
+        "containerId": "4b47015f-aa3b-44bc-9aa1-26e853e65596",
+        "created": "2022-11-19T13:30:56.884Z",
+        "sortNum": 15000
+      },
+      {
+        "_id": "d7fb84ed-84a2-43e5-943d-93ee08484c6f",
+        "name": "Medida Protetiva",
+        "containerId": "4b47015f-aa3b-44bc-9aa1-26e853e65596",
+        "created": "2022-11-19T13:59:41.527Z",
+        "sortNum": 17500
+      },
+      {
+        "_id": "db5e847e-d343-4f7c-a4ea-f2409b53cf50",
+        "name": "Protocolo de Encaminhamento",
+        "containerId": "4b47015f-aa3b-44bc-9aa1-26e853e65596",
+        "created": "2022-11-21T17:54:51.077Z",
+        "sortNum": 27500
+      }
+    ]
+  },
+  {
+    "_id": "718d3570-6166-4541-8555-61104b1c157a",
+    "colName": "Custom Reports",
+    "created": "2022-12-06T17:44:45.032Z",
+    "sortNum": 90000,
+    "folders": []
+  }
+]

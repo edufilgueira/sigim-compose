@@ -1,0 +1,12 @@
+@import './fonts/Poppins/style.css';
+@import './fonts/MaterialIcon/style.css';
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body, html{
+  width: 100%;
+  height: 100%;
+}

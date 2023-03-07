@@ -1,0 +1,23 @@
+en:
+  activerecord:
+    models:
+      ability_action: Ação
+      ability_permission: Permissão
+      ability_profile: Perfil
+      ability_resource: Recurso
+      menu: Menu
+      user: Usuario
+    errors:
+      models:
+        user:
+          attributes:
+            name:
+              blank: can't be blank
+            cpf:
+              taken: Has already been taken
+              blank: can't be blank
+            email:
+              taken: has already been taken
+              blank: can't be blank
+            password:
+              blank: can't be blank

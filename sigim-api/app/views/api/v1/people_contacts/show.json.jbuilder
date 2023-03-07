@@ -1,0 +1,7 @@
+json.people_contact do
+  json.id @people_contact.id
+  json.person @people_contact.person
+  json.contact_type @people_contact.contact_type
+  json.contact @people_contact.contact
+  json.observation @people_contact.observation
+end

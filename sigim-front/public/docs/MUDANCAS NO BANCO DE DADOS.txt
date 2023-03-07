@@ -1,0 +1,77 @@
+-- Type: document_student_type
+
+-- DROP TYPE IF EXISTS hgvirandojogo.document_student_type;
+
+CREATE TYPE hgvirandojogo.document_student_type AS ENUM
+    ('RG', 'CPF', 'CN', 'DECLARACAO');
+
+ALTER TYPE hgvirandojogo.document_student_type
+    OWNER TO postgres;
+
+
+
+
+
+
+-- Table: hgvirandojogo.students_documents
+
+-- DROP TABLE IF EXISTS hgvirandojogo.students_documents;
+
+CREATE TABLE IF NOT EXISTS hgvirandojogo.students_documents
+(
+    id bigint NOT NULL DEFAULT nextval('hgvirandojogo.students_documents_id_seq'::regclass),
+    id_student bigint NOT NULL,
+    document_type hgvirandojogo.document_student_type NOT NULL,
+    file_mime_type character varying(60) COLLATE pg_catalog."default" NOT NULL,
+    file_name character varying(255) COLLATE pg_catalog."default" NOT NULL,
+    file_data bytea NOT NULL,
+    created_at timestamp without time zone NOT NULL,
+    updated_at timestamp without time zone NOT NULL,
+    CONSTRAINT students_documents_pkey PRIMARY KEY (id),
+    CONSTRAINT fkey_id_student FOREIGN KEY (id_student)
+        REFERENCES hgvirandojogo.students (id) MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION
+        NOT VALID
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE IF EXISTS hgvirandojogo.students_documents
+    OWNER to postgres;
+	
+	
+# ADICIONADO "COALESCE"
+SELECT benefits.description AS beneficiario_a_pagar,
+    students.name AS aluno,
+    bp.phase_id || 'ª FASE'::text AS fase,
+    bp.amount_meetings AS quantidade_encontros,
+    bp.created_at AS data_hora_geracao_folha_pagamento,
+    COALESCE(bp.value, 0::numeric) AS valor,
+    bp.phase_id::text AS phase_id,
+    bp.team_id::text AS team_id,
+    benefits.season_id::text AS season_id
+   FROM hgvirandojogo.benefit_payments bp
+     JOIN hgvirandojogo.benefits ON benefits.id = bp.benefit_id
+     JOIN hgvirandojogo.teams_students ON teams_students.id = bp.teams_student_id
+     JOIN hgvirandojogo.students ON students.id = teams_students.student_id
+UNION ALL
+ SELECT 'TOTAL'::character varying AS beneficiario_a_pagar,
+    ''::character varying AS aluno,
+    ''::text AS fase,
+    0 AS quantidade_encontros,
+    NULL::timestamp without time zone AS data_hora_geracao_folha_pagamento,
+    sum(bp.value) AS valor,
+    ''::text AS phase_id,
+    ''::text AS team_id,
+    ''::text AS season_id
+   FROM hgvirandojogo.benefit_payments bp
+     JOIN hgvirandojogo.benefits ON benefits.id = bp.benefit_id;
+	 
+	 
+	 
+	 
+	 
+alter table hgvirandojogo.benefit_payments alter column value set default 0;
+
+rails generate migration change_column_default :benefit_payments, :value, 0

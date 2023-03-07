@@ -1,0 +1,5 @@
+pt-BR:
+  helper:
+    paginate:
+      limit_max_data: Página excede o limite máximo permitido (%{limit_max_data}) de visualização por página, impossibilitando a exibição de todos os dados
+      is_greater_than_total_pages: A pagina atual informada (%{page}) é maior que o total de páginas (%{total_pages})
