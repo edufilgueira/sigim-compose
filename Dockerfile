@@ -18,7 +18,6 @@ RUN gem install bundler -v $BUNDLER_VERSION && \
 
 #RUN bundle install
 
-
 EXPOSE 3000
 
 CMD ["bundle", "exec", "puma", "-C", "config/puma.rb"]
