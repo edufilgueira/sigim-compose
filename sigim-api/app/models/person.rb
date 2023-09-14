@@ -27,8 +27,6 @@ class Person < ApplicationRecord
 	# Validation
     
 	validates :name, presence: true
-	validates :cpf, :rg, :voter_registration, :work_card, uniqueness: true
 	validates_inclusion_of :chemical_dependent, :psychological_disorder, :pwd, :in => [true, false]
-	
-
+	 
 end

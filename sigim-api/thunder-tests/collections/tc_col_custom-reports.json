@@ -1,0 +1,29 @@
+{
+    "_id": "718d3570-6166-4541-8555-61104b1c157a",
+    "colName": "Custom Reports",
+    "created": "2022-12-06T17:44:45.032Z",
+    "sortNum": 90000,
+    "folders": [],
+    "requests": [
+        {
+            "_id": "b64bc638-1391-4ac9-aa29-e52c8eea471f",
+            "colId": "718d3570-6166-4541-8555-61104b1c157a",
+            "containerId": "",
+            "name": "People History",
+            "url": "{{servidor}}/custom_report/person_history?person_id=1",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2022-12-06T17:45:00.622Z",
+            "modified": "2023-01-17T14:33:44.021Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "person_id",
+                    "value": "1",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        }
+    ]
+}

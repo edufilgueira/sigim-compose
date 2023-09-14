@@ -1,5 +1,6 @@
 class State < ApplicationRecord
   include ::Fonetical
+  include ::Normalize
     
   # Associations
   

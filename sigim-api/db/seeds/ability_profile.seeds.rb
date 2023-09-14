@@ -419,6 +419,33 @@ AbilityAction.find_or_create_by(ability_resource_id: 45, action_code: :housing_s
 AbilityAction.find_or_create_by(ability_resource_id: 45, action_code: :housing_situation_update).update(name: "Editar #{name}")
 AbilityAction.find_or_create_by(ability_resource_id: 45, action_code: :housing_situation_destroy).update(name: "Deletar #{name}")
 
+puts "-- denunciation_agressors"
+AbilityResource.find_or_create_by(name: 'denunciation_agressor')
+name = "Agressor de denuncia"
+AbilityAction.find_or_create_by(ability_resource_id: 46, action_code: :denunciation_agressor_index).update(name: "Listar #{name}")
+AbilityAction.find_or_create_by(ability_resource_id: 46, action_code: :denunciation_agressor_show).update(name: "Visualizar #{name}")
+AbilityAction.find_or_create_by(ability_resource_id: 46, action_code: :denunciation_agressor_create).update(name: "Criar #{name}")
+AbilityAction.find_or_create_by(ability_resource_id: 46, action_code: :denunciation_agressor_update).update(name: "Editar #{name}")
+AbilityAction.find_or_create_by(ability_resource_id: 46, action_code: :denunciation_agressor_destroy).update(name: "Deletar #{name}")
+
+puts "-- denunciation_crime_types"
+AbilityResource.find_or_create_by(name: 'denunciation_crime_type')
+name = "Tipo de crime de denuncia"
+AbilityAction.find_or_create_by(ability_resource_id: 47, action_code: :denunciation_crime_type_index).update(name: "Listar #{name}")
+AbilityAction.find_or_create_by(ability_resource_id: 47, action_code: :denunciation_crime_type_show).update(name: "Visualizar #{name}")
+AbilityAction.find_or_create_by(ability_resource_id: 47, action_code: :denunciation_crime_type_create).update(name: "Criar #{name}")
+AbilityAction.find_or_create_by(ability_resource_id: 47, action_code: :denunciation_crime_type_update).update(name: "Editar #{name}")
+AbilityAction.find_or_create_by(ability_resource_id: 47, action_code: :denunciation_crime_type_destroy).update(name: "Deletar #{name}")
+
+puts "-- denunciation_victims"
+AbilityResource.find_or_create_by(name: 'denunciation_victim')
+name = "Vítima de denuncia"
+AbilityAction.find_or_create_by(ability_resource_id: 48, action_code: :denunciation_victim_index).update(name: "Listar #{name}")
+AbilityAction.find_or_create_by(ability_resource_id: 48, action_code: :denunciation_victim_show).update(name: "Visualizar #{name}")
+AbilityAction.find_or_create_by(ability_resource_id: 48, action_code: :denunciation_victim_create).update(name: "Criar #{name}")
+AbilityAction.find_or_create_by(ability_resource_id: 48, action_code: :denunciation_victim_update).update(name: "Editar #{name}")
+AbilityAction.find_or_create_by(ability_resource_id: 48, action_code: :denunciation_victim_destroy).update(name: "Deletar #{name}")
+
 puts "-- Profile Admin >>>"
 # Perfil Admin
 AbilityProfile.find_or_create_by(name: 'Admin')
@@ -651,3 +678,18 @@ AbilityPermission.find_or_create_by(ability_profile_id: id, ability_action: Abil
 AbilityPermission.find_or_create_by(ability_profile_id: id, ability_action: AbilityAction.find_by(action_code: :housing_situation_create))
 AbilityPermission.find_or_create_by(ability_profile_id: id, ability_action: AbilityAction.find_by(action_code: :housing_situation_update))
 AbilityPermission.find_or_create_by(ability_profile_id: id, ability_action: AbilityAction.find_by(action_code: :housing_situation_destroy))
+AbilityPermission.find_or_create_by(ability_profile_id: id, ability_action: AbilityAction.find_by(action_code: :denunciation_agressor_index))
+AbilityPermission.find_or_create_by(ability_profile_id: id, ability_action: AbilityAction.find_by(action_code: :denunciation_agressor_show))
+AbilityPermission.find_or_create_by(ability_profile_id: id, ability_action: AbilityAction.find_by(action_code: :denunciation_agressor_create))
+AbilityPermission.find_or_create_by(ability_profile_id: id, ability_action: AbilityAction.find_by(action_code: :denunciation_agressor_update))
+AbilityPermission.find_or_create_by(ability_profile_id: id, ability_action: AbilityAction.find_by(action_code: :denunciation_agressor_destroy))
+AbilityPermission.find_or_create_by(ability_profile_id: id, ability_action: AbilityAction.find_by(action_code: :denunciation_crime_type_index))
+AbilityPermission.find_or_create_by(ability_profile_id: id, ability_action: AbilityAction.find_by(action_code: :denunciation_crime_type_show))
+AbilityPermission.find_or_create_by(ability_profile_id: id, ability_action: AbilityAction.find_by(action_code: :denunciation_crime_type_create))
+AbilityPermission.find_or_create_by(ability_profile_id: id, ability_action: AbilityAction.find_by(action_code: :denunciation_crime_type_update))
+AbilityPermission.find_or_create_by(ability_profile_id: id, ability_action: AbilityAction.find_by(action_code: :denunciation_crime_type_destroy))
+AbilityPermission.find_or_create_by(ability_profile_id: id, ability_action: AbilityAction.find_by(action_code: :denunciation_victim_index))
+AbilityPermission.find_or_create_by(ability_profile_id: id, ability_action: AbilityAction.find_by(action_code: :denunciation_victim_show))
+AbilityPermission.find_or_create_by(ability_profile_id: id, ability_action: AbilityAction.find_by(action_code: :denunciation_victim_create))
+AbilityPermission.find_or_create_by(ability_profile_id: id, ability_action: AbilityAction.find_by(action_code: :denunciation_victim_update))
+AbilityPermission.find_or_create_by(ability_profile_id: id, ability_action: AbilityAction.find_by(action_code: :denunciation_victim_destroy))

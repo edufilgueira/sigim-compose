@@ -1,4 +1,5 @@
 class Community < ApplicationRecord
+	include ::Fonetical
 
 	# Associations
 

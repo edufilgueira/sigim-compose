@@ -1,0 +1,2320 @@
+{
+    "_id": "ea28f1b4-6292-4eab-9900-65edaf862c70",
+    "colName": "Dashboards",
+    "created": "2022-11-12T14:41:28.559Z",
+    "sortNum": 80000,
+    "folders": [
+        {
+            "_id": "4b47015f-aa3b-44bc-9aa1-26e853e65596",
+            "name": "Mulher",
+            "containerId": "",
+            "created": "2022-11-12T14:41:44.833Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "a98f9352-88bb-4266-8e2d-2919b8e09e90",
+            "name": "Boletim de Ocorrência",
+            "containerId": "4b47015f-aa3b-44bc-9aa1-26e853e65596",
+            "created": "2022-11-12T14:46:46.976Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "41f23020-1c04-43d0-89b4-3cb5cc92143c",
+            "name": "Processo Judicial",
+            "containerId": "4b47015f-aa3b-44bc-9aa1-26e853e65596",
+            "created": "2022-11-19T13:30:56.884Z",
+            "sortNum": 15000
+        },
+        {
+            "_id": "d7fb84ed-84a2-43e5-943d-93ee08484c6f",
+            "name": "Medida Protetiva",
+            "containerId": "4b47015f-aa3b-44bc-9aa1-26e853e65596",
+            "created": "2022-11-19T13:59:41.527Z",
+            "sortNum": 17500
+        },
+        {
+            "_id": "db5e847e-d343-4f7c-a4ea-f2409b53cf50",
+            "name": "Protocolo de Encaminhamento",
+            "containerId": "4b47015f-aa3b-44bc-9aa1-26e853e65596",
+            "created": "2022-11-21T17:54:51.077Z",
+            "sortNum": 27500
+        }
+    ],
+    "requests": [
+        {
+            "_id": "12ddae52-6b90-448d-882e-f81767ad0ef9",
+            "colId": "ea28f1b4-6292-4eab-9900-65edaf862c70",
+            "containerId": "a98f9352-88bb-4266-8e2d-2919b8e09e90",
+            "name": "Qtd Por Estado Civil",
+            "url": "{{servidor}}/dashboard_women/inc_rep/qtd_by_civil_status?civil_status_id&order_by=total",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2022-11-12T14:46:46.976Z",
+            "modified": "2022-11-19T13:37:50.062Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "civil_status_id",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "order_by",
+                    "value": "total",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "94ad55f1-7cad-4f45-9e14-0bb219f647d9",
+            "colId": "ea28f1b4-6292-4eab-9900-65edaf862c70",
+            "containerId": "a98f9352-88bb-4266-8e2d-2919b8e09e90",
+            "name": "Qtd Por Raça",
+            "url": "{{servidor}}/dashboard_women/inc_rep/qtd_by_breed?breed_id&order_by=total",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2022-11-12T14:46:46.977Z",
+            "modified": "2022-11-19T13:37:54.426Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "breed_id",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "order_by",
+                    "value": "total",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "3c8b97ac-fbda-4613-bffb-35545a9431c0",
+            "colId": "ea28f1b4-6292-4eab-9900-65edaf862c70",
+            "containerId": "a98f9352-88bb-4266-8e2d-2919b8e09e90",
+            "name": "Qtd Por Orientação Sexual",
+            "url": "{{servidor}}/dashboard_women/inc_rep/qtd_by_sexual_orientation?sexual_orientation_id&order_by=total",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2022-11-12T14:46:46.978Z",
+            "modified": "2022-11-19T13:37:59.803Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "sexual_orientation_id",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "order_by",
+                    "value": "total",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "9a63d36d-00e9-47b3-a1d5-dce5e7c3bd2d",
+            "colId": "ea28f1b4-6292-4eab-9900-65edaf862c70",
+            "containerId": "a98f9352-88bb-4266-8e2d-2919b8e09e90",
+            "name": "Qtd Por Cidade",
+            "url": "{{servidor}}/dashboard_women/inc_rep/qtd_by_occurrence_city?state_id&city_id&order_by=total&limit",
+            "method": "GET",
+            "sortNum": 90000,
+            "created": "2022-11-12T17:54:02.382Z",
+            "modified": "2022-11-19T13:38:56.305Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "state_id",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "city_id",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "order_by",
+                    "value": "total",
+                    "isPath": false
+                },
+                {
+                    "name": "limit",
+                    "value": "",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "07d6b11a-8ab3-4b33-9683-19ddd87d6343",
+            "colId": "ea28f1b4-6292-4eab-9900-65edaf862c70",
+            "containerId": "a98f9352-88bb-4266-8e2d-2919b8e09e90",
+            "name": "Qtd Por Deficiência",
+            "url": "{{servidor}}/dashboard_women/inc_rep/qtd_by_pwd?pwd&order_by=total",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2022-11-12T18:47:08.314Z",
+            "modified": "2022-11-19T13:38:05.813Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "pwd",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "order_by",
+                    "value": "total",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "9b3d20b0-0d8a-44c0-a5f2-d382327812d0",
+            "colId": "ea28f1b4-6292-4eab-9900-65edaf862c70",
+            "containerId": "a98f9352-88bb-4266-8e2d-2919b8e09e90",
+            "name": "Qtd Por Idade",
+            "url": "{{servidor}}/dashboard_women/inc_rep/qtd_by_age?age&age_start&age_end",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2022-11-12T19:04:13.201Z",
+            "modified": "2022-11-19T13:38:14.787Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "age",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "age_start",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "age_end",
+                    "value": "",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "90f4dfe8-6f64-4c59-8562-2726d107adb1",
+            "colId": "ea28f1b4-6292-4eab-9900-65edaf862c70",
+            "containerId": "a98f9352-88bb-4266-8e2d-2919b8e09e90",
+            "name": "Qtd Por Renda Média",
+            "url": "{{servidor}}/dashboard_women/inc_rep/qtd_by_average_income?average_income&average_income_start&average_income_end",
+            "method": "GET",
+            "sortNum": 80000,
+            "created": "2022-11-12T19:42:15.815Z",
+            "modified": "2022-11-19T13:38:34.746Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "average_income",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "average_income_start",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "average_income_end",
+                    "value": "",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "6ab68bcc-6449-43f2-a158-70c2a0e525d5",
+            "colId": "ea28f1b4-6292-4eab-9900-65edaf862c70",
+            "containerId": "a98f9352-88bb-4266-8e2d-2919b8e09e90",
+            "name": "Qtd TOTAL",
+            "url": "{{servidor}}/dashboard_women/inc_rep/qtd_total?place_of_birth_id&gender_id&gender_identity_id&sexual_orientation_id&breed_id&skin_color_id&ethnicity_id&civil_status_id&scholarity_id&average_income&average_income_start&average_income_end&chemical_dependent&psychological_disorder&pwd&risk_level_id&source_system_id",
+            "method": "GET",
+            "sortNum": 5000,
+            "created": "2022-11-15T18:36:32.551Z",
+            "modified": "2022-11-20T12:54:50.057Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "place_of_birth_id",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "gender_id",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "gender_identity_id",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "sexual_orientation_id",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "breed_id",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "skin_color_id",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "ethnicity_id",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "civil_status_id",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "scholarity_id",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "average_income",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "average_income_start",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "average_income_end",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "chemical_dependent",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "psychological_disorder",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "pwd",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "risk_level_id",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "source_system_id",
+                    "value": "",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "1b4b71ee-212a-4207-a0c2-2da165d9208e",
+            "colId": "ea28f1b4-6292-4eab-9900-65edaf862c70",
+            "containerId": "a98f9352-88bb-4266-8e2d-2919b8e09e90",
+            "name": "Qtd Por Identidade  de Gênero",
+            "url": "{{servidor}}/dashboard_women/inc_rep/qtd_by_gender_identity?gender_identity_id&order_by=total",
+            "method": "GET",
+            "sortNum": 7500,
+            "created": "2022-11-18T11:50:49.649Z",
+            "modified": "2022-11-19T13:37:38.702Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "gender_identity_id",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "order_by",
+                    "value": "total",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "ddf55bbb-744f-43d7-a016-00884cf96476",
+            "colId": "ea28f1b4-6292-4eab-9900-65edaf862c70",
+            "containerId": "a98f9352-88bb-4266-8e2d-2919b8e09e90",
+            "name": "Qtd Por Escolaridade",
+            "url": "{{servidor}}/dashboard_women/inc_rep/qtd_by_scholarity?scholarity_id&order_by=total",
+            "method": "GET",
+            "sortNum": 8750,
+            "created": "2022-11-18T11:54:09.544Z",
+            "modified": "2022-11-19T13:37:43.556Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "scholarity_id",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "order_by",
+                    "value": "total",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "7b95f3cc-dcd2-4d0f-aca8-ff3f5cdfde79",
+            "colId": "ea28f1b4-6292-4eab-9900-65edaf862c70",
+            "containerId": "a98f9352-88bb-4266-8e2d-2919b8e09e90",
+            "name": "Qtd Por Gênero",
+            "url": "{{servidor}}/dashboard_women/inc_rep/qtd_by_gender?gender_id&order_by=total",
+            "method": "GET",
+            "sortNum": 6250,
+            "created": "2022-11-18T12:01:56.931Z",
+            "modified": "2022-11-19T13:37:31.976Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "gender_id",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "order_by",
+                    "value": "total",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "e73677df-a208-4024-85f5-52d209918f42",
+            "colId": "ea28f1b4-6292-4eab-9900-65edaf862c70",
+            "containerId": "a98f9352-88bb-4266-8e2d-2919b8e09e90",
+            "name": "Qtd Por Tipo de Crime",
+            "url": "{{servidor}}/dashboard_women/inc_rep/qtd_by_crime_type?crime_type_id&order_by=total",
+            "method": "GET",
+            "sortNum": 5625,
+            "created": "2022-11-19T12:43:10.006Z",
+            "modified": "2022-11-19T13:36:58.124Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "crime_type_id",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "order_by",
+                    "value": "total",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "c38db569-c081-4b47-8580-d23722dd6836",
+            "colId": "ea28f1b4-6292-4eab-9900-65edaf862c70",
+            "containerId": "a98f9352-88bb-4266-8e2d-2919b8e09e90",
+            "name": "Qtd Por Tipo de Violência",
+            "url": "{{servidor}}/dashboard_women/inc_rep/qtd_by_violence_type?violence_type_id&order_by=total",
+            "method": "GET",
+            "sortNum": 5937.5,
+            "created": "2022-11-19T12:48:21.181Z",
+            "modified": "2022-11-19T13:37:11.665Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "violence_type_id",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "order_by",
+                    "value": "total",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "fabe1804-5613-4c22-b332-f2ccf2cf949c",
+            "colId": "ea28f1b4-6292-4eab-9900-65edaf862c70",
+            "containerId": "a98f9352-88bb-4266-8e2d-2919b8e09e90",
+            "name": "Qtd Por Motivação da Violência",
+            "url": "{{servidor}}/dashboard_women/inc_rep/qtd_by_violence_motivation?violence_motivation_id&order_by=total",
+            "method": "GET",
+            "sortNum": 6093.8,
+            "created": "2022-11-19T12:49:14.333Z",
+            "modified": "2022-11-19T13:37:21.237Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "violence_motivation_id",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "order_by",
+                    "value": "total",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "22ac1d34-64cc-427b-98a9-ba6f014d7061",
+            "colId": "ea28f1b4-6292-4eab-9900-65edaf862c70",
+            "containerId": "a98f9352-88bb-4266-8e2d-2919b8e09e90",
+            "name": "Qtd Por Sistema de Origem dos Dados",
+            "url": "{{servidor}}/dashboard_women/inc_rep/qtd_by_source_system?source_system_id&order_by=total",
+            "method": "GET",
+            "sortNum": 6171.9,
+            "created": "2022-11-19T12:51:38.383Z",
+            "modified": "2022-11-19T13:37:26.211Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "source_system_id",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "order_by",
+                    "value": "total",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "ffbabbc6-31da-4eec-9ed5-cb206a145856",
+            "colId": "ea28f1b4-6292-4eab-9900-65edaf862c70",
+            "containerId": "41f23020-1c04-43d0-89b4-3cb5cc92143c",
+            "name": "Qtd TOTAL",
+            "url": "{{servidor}}/dashboard_women/lawsuit/qtd_total?place_of_birth_id&gender_id&gender_identity_id&sexual_orientation_id&breed_id&skin_color_id&ethnicity_id&civil_status_id&scholarity_id&average_income&average_income_start&average_income_end&chemical_dependent&psychological_disorder&pwd",
+            "method": "GET",
+            "sortNum": 5000,
+            "created": "2022-11-19T13:30:56.884Z",
+            "modified": "2022-11-19T13:31:56.544Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "place_of_birth_id",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "gender_id",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "gender_identity_id",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "sexual_orientation_id",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "breed_id",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "skin_color_id",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "ethnicity_id",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "civil_status_id",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "scholarity_id",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "average_income",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "average_income_start",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "average_income_end",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "chemical_dependent",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "psychological_disorder",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "pwd",
+                    "value": "",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "4bf91280-2b7c-4a5a-abd3-28f399718146",
+            "colId": "ea28f1b4-6292-4eab-9900-65edaf862c70",
+            "containerId": "41f23020-1c04-43d0-89b4-3cb5cc92143c",
+            "name": "Qtd Por Tipo de Crime",
+            "url": "{{servidor}}/dashboard_women/lawsuit/qtd_by_crime_type?crime_type_id&order_by=total",
+            "method": "GET",
+            "sortNum": 5625,
+            "created": "2022-11-19T13:30:56.885Z",
+            "modified": "2022-11-19T13:39:40.340Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "crime_type_id",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "order_by",
+                    "value": "total",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "c0e3cfe5-4558-4e17-a2de-31c025d0d78f",
+            "colId": "ea28f1b4-6292-4eab-9900-65edaf862c70",
+            "containerId": "41f23020-1c04-43d0-89b4-3cb5cc92143c",
+            "name": "Qtd Por Tipo de Violência",
+            "url": "{{servidor}}/dashboard_women/lawsuit/qtd_by_violence_type?violence_type_id&order_by=total",
+            "method": "GET",
+            "sortNum": 5937.5,
+            "created": "2022-11-19T13:30:56.886Z",
+            "modified": "2022-11-19T13:39:47.359Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "violence_type_id",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "order_by",
+                    "value": "total",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "d295c63d-6611-4ca5-a73d-50caf6996879",
+            "colId": "ea28f1b4-6292-4eab-9900-65edaf862c70",
+            "containerId": "41f23020-1c04-43d0-89b4-3cb5cc92143c",
+            "name": "Qtd Por Motivação da Violência",
+            "url": "{{servidor}}/dashboard_women/lawsuit/qtd_by_violence_motivation?violence_motivation_id&order_by=total",
+            "method": "GET",
+            "sortNum": 6093.8,
+            "created": "2022-11-19T13:30:56.887Z",
+            "modified": "2022-11-19T13:39:54.795Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "violence_motivation_id",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "order_by",
+                    "value": "total",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "93b382e6-e0cf-43b5-abe8-5026ae94113d",
+            "colId": "ea28f1b4-6292-4eab-9900-65edaf862c70",
+            "containerId": "41f23020-1c04-43d0-89b4-3cb5cc92143c",
+            "name": "Qtd Por Sistema de Origem dos Dados",
+            "url": "{{servidor}}/dashboard_women/lawsuit/qtd_by_source_system?source_system_id&order_by=total",
+            "method": "GET",
+            "sortNum": 6171.9,
+            "created": "2022-11-19T13:30:56.888Z",
+            "modified": "2022-11-19T13:39:59.553Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "source_system_id",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "order_by",
+                    "value": "total",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "0c54c6fe-f7e4-4422-bb5c-f2129d59971f",
+            "colId": "ea28f1b4-6292-4eab-9900-65edaf862c70",
+            "containerId": "41f23020-1c04-43d0-89b4-3cb5cc92143c",
+            "name": "Qtd Por Gênero",
+            "url": "{{servidor}}/dashboard_women/lawsuit/qtd_by_gender?gender_id&order_by=total",
+            "method": "GET",
+            "sortNum": 6250,
+            "created": "2022-11-19T13:30:56.889Z",
+            "modified": "2022-11-19T13:40:05.539Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "gender_id",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "order_by",
+                    "value": "total",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "c3c2ad94-2dfb-4b24-b648-27cd1ba24fba",
+            "colId": "ea28f1b4-6292-4eab-9900-65edaf862c70",
+            "containerId": "41f23020-1c04-43d0-89b4-3cb5cc92143c",
+            "name": "Qtd Por Identidade  de Gênero",
+            "url": "{{servidor}}/dashboard_women/lawsuit/qtd_by_gender_identity?gender_identity_id&order_by=total",
+            "method": "GET",
+            "sortNum": 7500,
+            "created": "2022-11-19T13:30:56.890Z",
+            "modified": "2022-11-19T13:40:11.426Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "gender_identity_id",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "order_by",
+                    "value": "total",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "c931ed49-3204-4888-bf8d-4afdfff2c650",
+            "colId": "ea28f1b4-6292-4eab-9900-65edaf862c70",
+            "containerId": "41f23020-1c04-43d0-89b4-3cb5cc92143c",
+            "name": "Qtd Por Escolaridade",
+            "url": "{{servidor}}/dashboard_women/lawsuit/qtd_by_scholarity?scholarity_id&order_by=total",
+            "method": "GET",
+            "sortNum": 8750,
+            "created": "2022-11-19T13:30:56.891Z",
+            "modified": "2022-11-19T13:40:16.583Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "scholarity_id",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "order_by",
+                    "value": "total",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "5eb48031-b29c-4e00-95b4-ba1476c40005",
+            "colId": "ea28f1b4-6292-4eab-9900-65edaf862c70",
+            "containerId": "41f23020-1c04-43d0-89b4-3cb5cc92143c",
+            "name": "Qtd Por Estado Civil",
+            "url": "{{servidor}}/dashboard_women/lawsuit/qtd_by_civil_status?civil_status_id&order_by=total",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2022-11-19T13:30:56.892Z",
+            "modified": "2022-11-19T13:41:45.106Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "civil_status_id",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "order_by",
+                    "value": "total",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "57ae44f7-9de2-4335-a1ec-c0cfa2a0aac4",
+            "colId": "ea28f1b4-6292-4eab-9900-65edaf862c70",
+            "containerId": "41f23020-1c04-43d0-89b4-3cb5cc92143c",
+            "name": "Qtd Por Raça",
+            "url": "{{servidor}}/dashboard_women/lawsuit/qtd_by_breed?breed_id&order_by=total",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2022-11-19T13:30:56.893Z",
+            "modified": "2022-11-19T13:41:30.226Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "breed_id",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "order_by",
+                    "value": "total",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "3834c440-306f-49b0-a1cb-090fc3944d33",
+            "colId": "ea28f1b4-6292-4eab-9900-65edaf862c70",
+            "containerId": "41f23020-1c04-43d0-89b4-3cb5cc92143c",
+            "name": "Qtd Por Orientação Sexual",
+            "url": "{{servidor}}/dashboard_women/lawsuit/qtd_by_sexual_orientation?sexual_orientation_id&order_by=total",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2022-11-19T13:30:56.894Z",
+            "modified": "2022-11-19T13:41:24.061Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "sexual_orientation_id",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "order_by",
+                    "value": "total",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "9244a225-bd0d-4b5d-a415-34772722d2a7",
+            "colId": "ea28f1b4-6292-4eab-9900-65edaf862c70",
+            "containerId": "41f23020-1c04-43d0-89b4-3cb5cc92143c",
+            "name": "Qtd Por Deficiência",
+            "url": "{{servidor}}/dashboard_women/lawsuit/qtd_by_pwd?pwd&order_by=total",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2022-11-19T13:30:56.896Z",
+            "modified": "2022-11-19T13:41:17.773Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "pwd",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "order_by",
+                    "value": "total",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "6f8bf363-0a8a-4371-97a6-cddb4ad42dd1",
+            "colId": "ea28f1b4-6292-4eab-9900-65edaf862c70",
+            "containerId": "41f23020-1c04-43d0-89b4-3cb5cc92143c",
+            "name": "Qtd Por Idade",
+            "url": "{{servidor}}/dashboard_women/lawsuit/qtd_by_age?age&age_start&age_end",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2022-11-19T13:30:56.897Z",
+            "modified": "2022-11-19T13:41:11.899Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "age",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "age_start",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "age_end",
+                    "value": "",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "1a9b6984-d96b-46bc-b5b3-72e3ace04808",
+            "colId": "ea28f1b4-6292-4eab-9900-65edaf862c70",
+            "containerId": "41f23020-1c04-43d0-89b4-3cb5cc92143c",
+            "name": "Qtd Por Renda Média",
+            "url": "{{servidor}}/dashboard_women/lawsuit/qtd_by_average_income?average_income&average_income_start&average_income_end",
+            "method": "GET",
+            "sortNum": 80000,
+            "created": "2022-11-19T13:30:56.898Z",
+            "modified": "2022-11-19T13:36:41.355Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "average_income",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "average_income_start",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "average_income_end",
+                    "value": "",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "a87bbf63-955b-4e44-86e2-2b4bc211b690",
+            "colId": "ea28f1b4-6292-4eab-9900-65edaf862c70",
+            "containerId": "d7fb84ed-84a2-43e5-943d-93ee08484c6f",
+            "name": "Qtd TOTAL",
+            "url": "{{servidor}}/dashboard_women/prot_measure/qtd_total?place_of_birth_id&gender_id&gender_identity_id&sexual_orientation_id&breed_id&skin_color_id&ethnicity_id&civil_status_id&scholarity_id&average_income&average_income_start&average_income_end&chemical_dependent&psychological_disorder&pwd",
+            "method": "GET",
+            "sortNum": 5000,
+            "created": "2022-11-19T13:59:41.527Z",
+            "modified": "2022-11-19T14:00:32.546Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "place_of_birth_id",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "gender_id",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "gender_identity_id",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "sexual_orientation_id",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "breed_id",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "skin_color_id",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "ethnicity_id",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "civil_status_id",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "scholarity_id",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "average_income",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "average_income_start",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "average_income_end",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "chemical_dependent",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "psychological_disorder",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "pwd",
+                    "value": "",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "5eefd174-6443-4bc1-8293-12b77ca1abf4",
+            "colId": "ea28f1b4-6292-4eab-9900-65edaf862c70",
+            "containerId": "d7fb84ed-84a2-43e5-943d-93ee08484c6f",
+            "name": "Qtd Por Tipo de Crime",
+            "url": "{{servidor}}/dashboard_women/prot_measure/qtd_by_crime_type?crime_type_id&order_by=total",
+            "method": "GET",
+            "sortNum": 5625,
+            "created": "2022-11-19T13:59:41.528Z",
+            "modified": "2022-11-19T14:00:38.581Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "crime_type_id",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "order_by",
+                    "value": "total",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "ec9aab8c-7438-4c45-bc95-e53a4c8e61e1",
+            "colId": "ea28f1b4-6292-4eab-9900-65edaf862c70",
+            "containerId": "d7fb84ed-84a2-43e5-943d-93ee08484c6f",
+            "name": "Qtd Por Tipo de Violência",
+            "url": "{{servidor}}/dashboard_women/prot_measure/qtd_by_violence_type?violence_type_id&order_by=total",
+            "method": "GET",
+            "sortNum": 5937.5,
+            "created": "2022-11-19T13:59:41.529Z",
+            "modified": "2022-11-19T14:00:43.776Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "violence_type_id",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "order_by",
+                    "value": "total",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "f8c9c486-8618-47ca-9c32-f2b83738f2fc",
+            "colId": "ea28f1b4-6292-4eab-9900-65edaf862c70",
+            "containerId": "d7fb84ed-84a2-43e5-943d-93ee08484c6f",
+            "name": "Qtd Por Motivação da Violência",
+            "url": "{{servidor}}/dashboard_women/prot_measure/qtd_by_violence_motivation?violence_motivation_id&order_by=total",
+            "method": "GET",
+            "sortNum": 6093.8,
+            "created": "2022-11-19T13:59:41.530Z",
+            "modified": "2022-11-19T14:16:29.997Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "violence_motivation_id",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "order_by",
+                    "value": "total",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "9320e804-af73-42c3-8b32-9414098bfa0f",
+            "colId": "ea28f1b4-6292-4eab-9900-65edaf862c70",
+            "containerId": "d7fb84ed-84a2-43e5-943d-93ee08484c6f",
+            "name": "Qtd Por Sistema de Origem dos Dados",
+            "url": "{{servidor}}/dashboard_women/prot_measure/qtd_by_source_system?source_system_id&order_by=total",
+            "method": "GET",
+            "sortNum": 6171.9,
+            "created": "2022-11-19T13:59:41.531Z",
+            "modified": "2022-11-19T14:00:54.148Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "source_system_id",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "order_by",
+                    "value": "total",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "696a1742-9c5f-45c3-9573-4dad24f6bd9f",
+            "colId": "ea28f1b4-6292-4eab-9900-65edaf862c70",
+            "containerId": "d7fb84ed-84a2-43e5-943d-93ee08484c6f",
+            "name": "Qtd Por Gênero",
+            "url": "{{servidor}}/dashboard_women/prot_measure/qtd_by_gender?gender_id&order_by=total",
+            "method": "GET",
+            "sortNum": 6250,
+            "created": "2022-11-19T13:59:41.532Z",
+            "modified": "2022-11-19T14:00:59.327Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "gender_id",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "order_by",
+                    "value": "total",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "3527a3c4-41d8-4211-9e4e-6a681d396c69",
+            "colId": "ea28f1b4-6292-4eab-9900-65edaf862c70",
+            "containerId": "d7fb84ed-84a2-43e5-943d-93ee08484c6f",
+            "name": "Qtd Por Identidade  de Gênero",
+            "url": "{{servidor}}/dashboard_women/prot_measure/qtd_by_gender_identity?gender_identity_id&order_by=total",
+            "method": "GET",
+            "sortNum": 7500,
+            "created": "2022-11-19T13:59:41.533Z",
+            "modified": "2022-11-19T14:01:04.802Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "gender_identity_id",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "order_by",
+                    "value": "total",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "fcab48ff-10ee-4959-a6f4-2a7692bbd0f3",
+            "colId": "ea28f1b4-6292-4eab-9900-65edaf862c70",
+            "containerId": "d7fb84ed-84a2-43e5-943d-93ee08484c6f",
+            "name": "Qtd Por Escolaridade",
+            "url": "{{servidor}}/dashboard_women/prot_measure/qtd_by_scholarity?scholarity_id&order_by=total",
+            "method": "GET",
+            "sortNum": 8750,
+            "created": "2022-11-19T13:59:41.534Z",
+            "modified": "2022-11-19T14:01:09.609Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "scholarity_id",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "order_by",
+                    "value": "total",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "3db58a38-bf3c-45b0-83c0-8fcedafbb841",
+            "colId": "ea28f1b4-6292-4eab-9900-65edaf862c70",
+            "containerId": "d7fb84ed-84a2-43e5-943d-93ee08484c6f",
+            "name": "Qtd Por Estado Civil",
+            "url": "{{servidor}}/dashboard_women/prot_measure/qtd_by_civil_status?civil_status_id&order_by=total",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2022-11-19T13:59:41.535Z",
+            "modified": "2022-11-19T14:01:19.131Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "civil_status_id",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "order_by",
+                    "value": "total",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "98618111-8e4c-41fa-a091-263407b00c6e",
+            "colId": "ea28f1b4-6292-4eab-9900-65edaf862c70",
+            "containerId": "d7fb84ed-84a2-43e5-943d-93ee08484c6f",
+            "name": "Qtd Por Raça",
+            "url": "{{servidor}}/dashboard_women/prot_measure/qtd_by_breed?breed_id&order_by=total",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2022-11-19T13:59:41.536Z",
+            "modified": "2022-11-19T14:01:22.972Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "breed_id",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "order_by",
+                    "value": "total",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "92afac58-1282-441b-b40b-b8eae3c5c686",
+            "colId": "ea28f1b4-6292-4eab-9900-65edaf862c70",
+            "containerId": "d7fb84ed-84a2-43e5-943d-93ee08484c6f",
+            "name": "Qtd Por Orientação Sexual",
+            "url": "{{servidor}}/dashboard_women/prot_measure/qtd_by_sexual_orientation?sexual_orientation_id&order_by=total",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2022-11-19T13:59:41.537Z",
+            "modified": "2022-11-19T14:01:30.536Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "sexual_orientation_id",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "order_by",
+                    "value": "total",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "e1a99d8d-1eac-4052-8bed-2bc5dff8c984",
+            "colId": "ea28f1b4-6292-4eab-9900-65edaf862c70",
+            "containerId": "d7fb84ed-84a2-43e5-943d-93ee08484c6f",
+            "name": "Qtd Por Deficiência",
+            "url": "{{servidor}}/dashboard_women/prot_measure/qtd_by_pwd?pwd&order_by=total",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2022-11-19T13:59:41.538Z",
+            "modified": "2022-11-19T14:01:34.379Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "pwd",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "order_by",
+                    "value": "total",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "04dbcec3-e67c-470d-afef-e0433d807a63",
+            "colId": "ea28f1b4-6292-4eab-9900-65edaf862c70",
+            "containerId": "d7fb84ed-84a2-43e5-943d-93ee08484c6f",
+            "name": "Qtd Por Idade",
+            "url": "{{servidor}}/dashboard_women/prot_measure/qtd_by_age?age&age_start&age_end",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2022-11-19T13:59:41.539Z",
+            "modified": "2022-11-19T14:09:00.986Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "age",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "age_start",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "age_end",
+                    "value": "",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "c2188d62-d056-4a1d-b3bf-37a36915ca15",
+            "colId": "ea28f1b4-6292-4eab-9900-65edaf862c70",
+            "containerId": "d7fb84ed-84a2-43e5-943d-93ee08484c6f",
+            "name": "Qtd Por Renda Média",
+            "url": "{{servidor}}/dashboard_women/prot_measure/qtd_by_average_income?average_income&average_income_start&average_income_end",
+            "method": "GET",
+            "sortNum": 80000,
+            "created": "2022-11-19T13:59:41.540Z",
+            "modified": "2022-11-19T14:01:43.144Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "average_income",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "average_income_start",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "average_income_end",
+                    "value": "",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "f7396c2c-392a-4148-be0f-1e6ffff4085f",
+            "colId": "ea28f1b4-6292-4eab-9900-65edaf862c70",
+            "containerId": "d7fb84ed-84a2-43e5-943d-93ee08484c6f",
+            "name": "Qtd Por Cidade",
+            "url": "{{servidor}}/dashboard_women/prot_measure/qtd_by_occurrence_city?state_id&city_id&order_by=total DESC&limit",
+            "method": "GET",
+            "sortNum": 90000,
+            "created": "2022-11-19T14:22:01.396Z",
+            "modified": "2022-11-19T14:30:36.158Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "state_id",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "city_id",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "order_by",
+                    "value": "total DESC",
+                    "isPath": false
+                },
+                {
+                    "name": "limit",
+                    "value": "",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "6a0c4d7e-2b84-4832-99a6-5b90c626a788",
+            "colId": "ea28f1b4-6292-4eab-9900-65edaf862c70",
+            "containerId": "a98f9352-88bb-4266-8e2d-2919b8e09e90",
+            "name": "Qtd Por Nível de Risco",
+            "url": "{{servidor}}/dashboard_women/inc_rep/qtd_by_risk_level?risk_level_id&order_by=total",
+            "method": "GET",
+            "sortNum": 100000,
+            "created": "2022-11-20T02:01:29.937Z",
+            "modified": "2022-11-20T02:03:38.984Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "risk_level_id",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "order_by",
+                    "value": "total",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "76ee8f98-2d72-4e80-b230-be8646acab58",
+            "colId": "ea28f1b4-6292-4eab-9900-65edaf862c70",
+            "containerId": "41f23020-1c04-43d0-89b4-3cb5cc92143c",
+            "name": "Qtd Por Nível de Risco",
+            "url": "{{servidor}}/dashboard_women/lawsuit/qtd_by_risk_level?risk_level_id&order_by=total",
+            "method": "GET",
+            "sortNum": 90000,
+            "created": "2022-11-20T02:02:29.457Z",
+            "modified": "2022-11-20T02:03:27.553Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "risk_level_id",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "order_by",
+                    "value": "total",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "0260add6-1e30-49bb-9bdf-d3f0d7e431a2",
+            "colId": "ea28f1b4-6292-4eab-9900-65edaf862c70",
+            "containerId": "d7fb84ed-84a2-43e5-943d-93ee08484c6f",
+            "name": "Qtd Por Nível de Risco",
+            "url": "{{servidor}}/dashboard_women/prot_measure/qtd_by_risk_level?risk_level_id&order_by=total",
+            "method": "GET",
+            "sortNum": 100000,
+            "created": "2022-11-20T02:03:57.205Z",
+            "modified": "2022-11-20T02:04:19.231Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "risk_level_id",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "order_by",
+                    "value": "total",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "07c50d75-1d89-4b6d-92b9-041b1d70f126",
+            "colId": "ea28f1b4-6292-4eab-9900-65edaf862c70",
+            "containerId": "a98f9352-88bb-4266-8e2d-2919b8e09e90",
+            "name": "Qtd TOTAL Por Mês",
+            "url": "{{servidor}}/dashboard_women/inc_rep/qtd_total_by_communication_month?place_of_birth_id&gender_id&gender_identity_id&sexual_orientation_id&breed_id&skin_color_id&ethnicity_id&civil_status_id&scholarity_id&average_income&average_income_start&average_income_end&chemical_dependent&psychological_disorder&pwd&risk_level_id&source_system_id&communication_year&communication_month&order_by=month",
+            "method": "GET",
+            "sortNum": 5312.5,
+            "created": "2022-11-20T12:09:58.196Z",
+            "modified": "2022-11-20T13:20:45.701Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "place_of_birth_id",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "gender_id",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "gender_identity_id",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "sexual_orientation_id",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "breed_id",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "skin_color_id",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "ethnicity_id",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "civil_status_id",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "scholarity_id",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "average_income",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "average_income_start",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "average_income_end",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "chemical_dependent",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "psychological_disorder",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "pwd",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "risk_level_id",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "source_system_id",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "communication_year",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "communication_month",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "order_by",
+                    "value": "month",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "86c25691-208a-43a8-8209-f2bab53772b2",
+            "colId": "ea28f1b4-6292-4eab-9900-65edaf862c70",
+            "containerId": "41f23020-1c04-43d0-89b4-3cb5cc92143c",
+            "name": "Qtd TOTAL Por Mês",
+            "url": "{{servidor}}/dashboard_women/lawsuit/qtd_total_by_opening_month?place_of_birth_id&gender_id&gender_identity_id&sexual_orientation_id&breed_id&skin_color_id&ethnicity_id&civil_status_id&scholarity_id&average_income&average_income_start&average_income_end&chemical_dependent&psychological_disorder&pwd&risk_level_id&source_system_id&opening_date_year&opening_date_month&order_by=month",
+            "method": "GET",
+            "sortNum": 5312.5,
+            "created": "2022-11-20T18:22:45.085Z",
+            "modified": "2022-11-20T18:33:32.555Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "place_of_birth_id",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "gender_id",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "gender_identity_id",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "sexual_orientation_id",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "breed_id",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "skin_color_id",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "ethnicity_id",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "civil_status_id",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "scholarity_id",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "average_income",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "average_income_start",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "average_income_end",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "chemical_dependent",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "psychological_disorder",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "pwd",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "risk_level_id",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "source_system_id",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "opening_date_year",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "opening_date_month",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "order_by",
+                    "value": "month",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "666b3feb-6799-4287-b9ff-8e7f117d45e3",
+            "colId": "ea28f1b4-6292-4eab-9900-65edaf862c70",
+            "containerId": "d7fb84ed-84a2-43e5-943d-93ee08484c6f",
+            "name": "Qtd TOTAL Por Mês",
+            "url": "{{servidor}}/dashboard_women/prot_measure/qtd_total_by_authorization_month?place_of_birth_id&gender_id&gender_identity_id&sexual_orientation_id&breed_id&skin_color_id&ethnicity_id&civil_status_id&scholarity_id&average_income&average_income_start&average_income_end&chemical_dependent&psychological_disorder&pwd&risk_level_id&source_system_id&authorization_date_year&authorization_date_month&order_by=month",
+            "method": "GET",
+            "sortNum": 5312.5,
+            "created": "2022-11-20T19:00:51.723Z",
+            "modified": "2022-11-20T19:01:58.839Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "place_of_birth_id",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "gender_id",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "gender_identity_id",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "sexual_orientation_id",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "breed_id",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "skin_color_id",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "ethnicity_id",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "civil_status_id",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "scholarity_id",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "average_income",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "average_income_start",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "average_income_end",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "chemical_dependent",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "psychological_disorder",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "pwd",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "risk_level_id",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "source_system_id",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "authorization_date_year",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "authorization_date_month",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "order_by",
+                    "value": "month",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "795a201a-a8ca-4db7-93f5-ea9e9fb8bc89",
+            "colId": "ea28f1b4-6292-4eab-9900-65edaf862c70",
+            "containerId": "db5e847e-d343-4f7c-a4ea-f2409b53cf50",
+            "name": "Qtd TOTAL",
+            "url": "{{servidor}}/dashboard_forwarding_protocol/qtd_total?place_of_birth_id&gender_id&gender_identity_id&sexual_orientation_id&breed_id&skin_color_id&ethnicity_id&civil_status_id&scholarity_id&average_income&average_income_start&average_income_end&chemical_dependent&psychological_disorder&pwd&risk_level_id&source_system_id",
+            "method": "GET",
+            "sortNum": 5000,
+            "created": "2022-11-21T17:54:51.077Z",
+            "modified": "2022-11-21T17:55:52.701Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "place_of_birth_id",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "gender_id",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "gender_identity_id",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "sexual_orientation_id",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "breed_id",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "skin_color_id",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "ethnicity_id",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "civil_status_id",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "scholarity_id",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "average_income",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "average_income_start",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "average_income_end",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "chemical_dependent",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "psychological_disorder",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "pwd",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "risk_level_id",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "source_system_id",
+                    "value": "",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "ce29d392-433d-4fef-9d9e-beb20e0b3b62",
+            "colId": "ea28f1b4-6292-4eab-9900-65edaf862c70",
+            "containerId": "db5e847e-d343-4f7c-a4ea-f2409b53cf50",
+            "name": "Qtd TOTAL Por Mês",
+            "url": "{{servidor}}/dashboard_forwarding_protocol/qtd_total_by_month?place_of_birth_id&gender_id&gender_identity_id&sexual_orientation_id&breed_id&skin_color_id&ethnicity_id&civil_status_id&scholarity_id&average_income&average_income_start&average_income_end&chemical_dependent&psychological_disorder&pwd&risk_level_id&source_system_id&forwarding_year&forwarding_month&order_by=month",
+            "method": "GET",
+            "sortNum": 5312.5,
+            "created": "2022-11-21T17:54:51.078Z",
+            "modified": "2022-11-21T18:38:34.707Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "place_of_birth_id",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "gender_id",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "gender_identity_id",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "sexual_orientation_id",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "breed_id",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "skin_color_id",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "ethnicity_id",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "civil_status_id",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "scholarity_id",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "average_income",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "average_income_start",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "average_income_end",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "chemical_dependent",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "psychological_disorder",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "pwd",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "risk_level_id",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "source_system_id",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "forwarding_year",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "forwarding_month",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "order_by",
+                    "value": "month",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "b112ee13-c6e9-4f33-a78e-71a73f525d51",
+            "colId": "ea28f1b4-6292-4eab-9900-65edaf862c70",
+            "containerId": "db5e847e-d343-4f7c-a4ea-f2409b53cf50",
+            "name": "Qtd Por Sistema de Origem dos Dados",
+            "url": "{{servidor}}/dashboard_forwarding_protocol/qtd_by_source_system?source_system_id&order_by=total",
+            "method": "GET",
+            "sortNum": 6171.9,
+            "created": "2022-11-21T17:54:51.082Z",
+            "modified": "2022-11-21T17:58:05.716Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "source_system_id",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "order_by",
+                    "value": "total",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "4139f4d0-f9e8-43f6-a600-b341bc40c54f",
+            "colId": "ea28f1b4-6292-4eab-9900-65edaf862c70",
+            "containerId": "db5e847e-d343-4f7c-a4ea-f2409b53cf50",
+            "name": "Qtd Por Gênero",
+            "url": "{{servidor}}/dashboard_forwarding_protocol/qtd_by_gender?gender_id&order_by=total",
+            "method": "GET",
+            "sortNum": 6250,
+            "created": "2022-11-21T17:54:51.083Z",
+            "modified": "2022-11-21T17:58:14.256Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "gender_id",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "order_by",
+                    "value": "total",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "b23d7974-557b-4255-9070-196d4a554b0a",
+            "colId": "ea28f1b4-6292-4eab-9900-65edaf862c70",
+            "containerId": "db5e847e-d343-4f7c-a4ea-f2409b53cf50",
+            "name": "Qtd Por Identidade  de Gênero",
+            "url": "{{servidor}}/dashboard_forwarding_protocol/qtd_by_gender_identity?gender_identity_id&order_by=total",
+            "method": "GET",
+            "sortNum": 7500,
+            "created": "2022-11-21T17:54:51.085Z",
+            "modified": "2022-11-21T17:58:21.823Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "gender_identity_id",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "order_by",
+                    "value": "total",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "f6454a2c-ffc7-4609-82b2-9dede4e6c403",
+            "colId": "ea28f1b4-6292-4eab-9900-65edaf862c70",
+            "containerId": "db5e847e-d343-4f7c-a4ea-f2409b53cf50",
+            "name": "Qtd Por Escolaridade",
+            "url": "{{servidor}}/dashboard_forwarding_protocol/qtd_by_scholarity?scholarity_id&order_by=total",
+            "method": "GET",
+            "sortNum": 8750,
+            "created": "2022-11-21T17:54:51.086Z",
+            "modified": "2022-11-21T17:58:30.801Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "scholarity_id",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "order_by",
+                    "value": "total",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "d4770c0c-faee-40c2-9b02-acb5f9995059",
+            "colId": "ea28f1b4-6292-4eab-9900-65edaf862c70",
+            "containerId": "db5e847e-d343-4f7c-a4ea-f2409b53cf50",
+            "name": "Qtd Por Estado Civil",
+            "url": "{{servidor}}/dashboard_forwarding_protocol/qtd_by_civil_status?civil_status_id&order_by=total",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2022-11-21T17:54:51.087Z",
+            "modified": "2022-11-21T17:58:39.388Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "civil_status_id",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "order_by",
+                    "value": "total",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "639863cc-ebb0-4660-8f5f-c6da5442b696",
+            "colId": "ea28f1b4-6292-4eab-9900-65edaf862c70",
+            "containerId": "db5e847e-d343-4f7c-a4ea-f2409b53cf50",
+            "name": "Qtd Por Raça",
+            "url": "{{servidor}}/dashboard_forwarding_protocol/qtd_by_breed?breed_id&order_by=total",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2022-11-21T17:54:51.088Z",
+            "modified": "2022-11-21T17:58:56.717Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "breed_id",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "order_by",
+                    "value": "total",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "59009007-a8c3-4e0a-bdd1-07419500b645",
+            "colId": "ea28f1b4-6292-4eab-9900-65edaf862c70",
+            "containerId": "db5e847e-d343-4f7c-a4ea-f2409b53cf50",
+            "name": "Qtd Por Orientação Sexual",
+            "url": "{{servidor}}/dashboard_forwarding_protocol/qtd_by_sexual_orientation?sexual_orientation_id&order_by=total",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2022-11-21T17:54:51.090Z",
+            "modified": "2022-11-21T17:59:04.773Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "sexual_orientation_id",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "order_by",
+                    "value": "total",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "f7c3ac52-1b5e-4fb9-bcd9-038eef92a4df",
+            "colId": "ea28f1b4-6292-4eab-9900-65edaf862c70",
+            "containerId": "db5e847e-d343-4f7c-a4ea-f2409b53cf50",
+            "name": "Qtd Por Deficiência",
+            "url": "{{servidor}}/dashboard_forwarding_protocol/qtd_by_pwd?pwd&order_by=total",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2022-11-21T17:54:51.091Z",
+            "modified": "2022-11-21T17:59:12.617Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "pwd",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "order_by",
+                    "value": "total",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "bd9b8b11-2f5e-4b78-aee8-afad26d0cbf2",
+            "colId": "ea28f1b4-6292-4eab-9900-65edaf862c70",
+            "containerId": "db5e847e-d343-4f7c-a4ea-f2409b53cf50",
+            "name": "Qtd Por Idade",
+            "url": "{{servidor}}/dashboard_forwarding_protocol/qtd_by_age?age&age_start&age_end",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2022-11-21T17:54:51.092Z",
+            "modified": "2022-11-21T17:59:29.268Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "age",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "age_start",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "age_end",
+                    "value": "",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "1db5ca8f-4bac-4860-a6f6-84999026532a",
+            "colId": "ea28f1b4-6292-4eab-9900-65edaf862c70",
+            "containerId": "db5e847e-d343-4f7c-a4ea-f2409b53cf50",
+            "name": "Qtd Por Renda Média",
+            "url": "{{servidor}}/dashboard_forwarding_protocol/qtd_by_average_income?average_income&average_income_start&average_income_end",
+            "method": "GET",
+            "sortNum": 80000,
+            "created": "2022-11-21T17:54:51.093Z",
+            "modified": "2022-11-21T17:59:39.557Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "average_income",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "average_income_start",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "average_income_end",
+                    "value": "",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "1138afbf-5b49-4194-8d6a-e75c450fd2ec",
+            "colId": "ea28f1b4-6292-4eab-9900-65edaf862c70",
+            "containerId": "db5e847e-d343-4f7c-a4ea-f2409b53cf50",
+            "name": "Qtd Por Nível de Risco",
+            "url": "{{servidor}}/dashboard_forwarding_protocol/qtd_by_risk_level?risk_level_id&order_by=total",
+            "method": "GET",
+            "sortNum": 100000,
+            "created": "2022-11-21T17:54:51.095Z",
+            "modified": "2022-11-21T17:59:47.258Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "risk_level_id",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "order_by",
+                    "value": "total",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        }
+    ]
+}

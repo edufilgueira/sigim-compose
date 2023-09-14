@@ -27,7 +27,7 @@ class Api::V1::CustomReportsController < ApplicationController
             forwarding_protocols.updated_at
           ")
                             .where('person_id = ?', params[:person_id])
-
+    
     @incident_reports = IncidentReport
                         .joins(:source_system)
                         .joins(:crime_type)
@@ -196,29 +196,50 @@ class Api::V1::CustomReportsController < ApplicationController
   ")
                      .where('victim_id = ?', params[:person_id])
 
-    @denunciations_aggressor = Denunciation
-                               .joins(:source_system)
-                               .left_joins(:crime_type)
-                               .left_joins(:violence_type)
-                               .left_joins(:violence_motivation)
-                               .select("
-    aggressor_id AS person_id,
-    source_systems.name AS source_system_name,
-    denunciations.id,
-    'denunciation' AS type,
-    'BOLETIM DE OCORRÊNCIA - COMO AGRESSOR' AS occurrence,
-    CONCAT(
-      'NÚMERO: ', denunciations.number,
-      '; TIPO DE CRIME: ', crime_types.name,
-      '; TIPO DE VIOLÊNCIA: ', violence_types.name,
-      '; MOTIVAÇÃO DA VIOLÊNCIA: ', violence_motivations.name,
-      '; DT DA OCORÊNCIA: ', denunciations.opening_date
-    ) AS description,
-    denunciations.opening_date AS occurrence_date,
-    denunciations.created_at,
-    denunciations.updated_at
-  ")
-                               .where('aggressor_id = ?', params[:person_id])
+    debugger
+
+    @denunciations_aggressor = Denunciation.find_by_sql("
+      SELECT 
+        d.id,
+        ss.name AS source_system_name,
+        denunciations.opening_date AS occurrence_date,
+        (ARRAY(SELECT pv.name FROM public.denunciation_victims v LEFT JOIN public.people pv ON pv.id = v.person_id WHERE v.denunciation_id = d.id)) AS victims,
+        (ARRAY(SELECT pa.name FROM public.denunciation_victims ag LEFT JOIN public.people pa ON pa.id = ag.person_id WHERE ag.denunciation_id = d.id)) AS aggressors,
+        d.created_at,
+        d.created_at
+      FROM 
+        public.denunciations d
+      INNER JOIN source_systems ss ON ss.id = d.source_system_id
+      WHERE 
+        d.id = #{params[:person_id]}
+      ORDER BY 
+        d.id
+    ")
+
+  #   @denunciations_aggressor = Denunciation
+  #                              .joins(:source_system)
+  #                              .left_joins(denunciation_crime_type: :crime_type)
+  #                              .left_joins()
+  #                              .left_joins(:violence_type)
+  #                              .left_joins(:violence_motivation)
+  #                              .select("
+  #   aggressor_id AS person_id,
+  #   source_systems.name AS source_system_name,
+  #   denunciations.id,
+  #   'denunciation' AS type,
+  #   'BOLETIM DE OCORRÊNCIA - COMO AGRESSOR' AS occurrence,
+  #   CONCAT(
+  #     'NÚMERO: ', denunciations.number,
+  #     '; TIPO DE CRIME: ', crime_types.name,
+  #     '; TIPO DE VIOLÊNCIA: ', violence_types.name,
+  #     '; MOTIVAÇÃO DA VIOLÊNCIA: ', violence_motivations.name,
+  #     '; DT DA OCORÊNCIA: ', denunciations.opening_date
+  #   ) AS description,
+  #   denunciations.opening_date AS occurrence_date,
+  #   denunciations.created_at,
+  #   denunciations.updated_at
+  # ")
+  #                              .where('aggressor_id = ?', params[:person_id])
 
     sql = @forwarding_protocols.to_sql +
           ' UNION ' + @incident_reports.to_sql +

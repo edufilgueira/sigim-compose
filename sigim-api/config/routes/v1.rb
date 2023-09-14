@@ -176,6 +176,9 @@ Rails.application.routes.draw do
       resources :source_systems
       resources :risk_levels
       resources :denunciations
+      resources :denunciation_agressors
+      resources :denunciation_crime_types
+      resources :denunciation_victims
       resources :dependency_types
       resources :handicap_types
       resources :handicap_people

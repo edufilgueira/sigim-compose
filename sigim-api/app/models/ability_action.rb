@@ -246,7 +246,22 @@ class AbilityAction < ApplicationRecord
     housing_situation_show:    4501,
     housing_situation_create:  4502,
     housing_situation_update:  4503,
-    housing_situation_destroy: 4504
+    housing_situation_destroy: 4504,
+    denunciation_agressor_index:   4600,
+    denunciation_agressor_show:    4601,
+    denunciation_agressor_create:  4602,
+    denunciation_agressor_update:  4603,
+    denunciation_agressor_destroy: 4604,
+    denunciation_crime_type_index:   4700,
+    denunciation_crime_type_show:    4701,
+    denunciation_crime_type_create:  4702,
+    denunciation_crime_type_update:  4703,
+    denunciation_crime_type_destroy: 4704,
+    denunciation_victim_index:   4800,
+    denunciation_victim_show:    4801,
+    denunciation_victim_create:  4802,
+    denunciation_victim_update:  4803,
+    denunciation_victim_destroy: 4804,
   }
 
   ## Helpers

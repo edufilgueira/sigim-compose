@@ -54,6 +54,7 @@ Scholarity.find_or_create_by(name: 'DOUTORADO')
 Scholarity.find_or_create_by(name: 'PÓS-DOUTORADO')
 Scholarity.find_or_create_by(name: 'PÓS-GRADUAÇÃO')
 Scholarity.find_or_create_by(name: 'ALFABETIZADO')
+Scholarity.find_or_create_by(name: 'ANALFABETO')
 
 puts "Gender >>>"
 Gender.find_or_create_by(name: 'Não informado')
@@ -251,8 +252,11 @@ puts "Sectorial >>>"
 Sectorial.find_or_create_by(name: 'EDUCAÇÃO')#1
 Sectorial.find_or_create_by(name: 'SEGURANÇA PÚBLICA')#2
 Sectorial.find_or_create_by(name: 'SAÚDE')#3
-Sectorial.find_or_create_by(name: 'JUSTIÇA')#4
-Sectorial.find_or_create_by(name: 'ASSISTÊNCIA SOCIAL E MULHERES')#5
+Sectorial.find_or_create_by(name: 'JUIZADO')#4
+Sectorial.find_or_create_by(name: 'ASSISTÊNCIA SOCIAL')#5
+Sectorial.find_or_create_by(name: 'POLÍTICA DE MULHERES')#6
+Sectorial.find_or_create_by(name: 'DEFENSORIA')#7
+Sectorial.find_or_create_by(name: 'MINISTÉRIO PÚBLICO')#8
 
 puts "HandicapType >>>"
 HandicapType.find_or_create_by(name: 'Não informado')
@@ -275,3 +279,5 @@ HousingSituation.find_or_create_by(name: 'Cedido')
 HousingSituation.find_or_create_by(name: 'Invadido')
 HousingSituation.find_or_create_by(name: 'Situação de Rua')
 HousingSituation.find_or_create_by(name: 'Em Abrigo')
+HousingSituation.find_or_create_by(name: 'Casa de familiares')
+HousingSituation.find_or_create_by(name: 'Casa de amigos')

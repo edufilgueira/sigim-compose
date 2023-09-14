@@ -12,7 +12,7 @@ class BaseController < ApplicationController
 
   PERMITTED_PARAMS = []
 
-  @@status_save = true
+  @status_save = true
 
   # GET /all
   def index
@@ -96,12 +96,12 @@ class BaseController < ApplicationController
     ActiveRecord::Base.transaction do
       accept_params[:_json].each do |create_new|
         resource_ = resource_klass.new(create_new)  
-        @@status_save = false if !resource_.save
+        @status_save = false if !resource_.save
         raise ActiveRecord::Rollback if !resource_.save
       end
     end
-    render json: :sucess, status: :created if @@status_save
-    json_errors(resource_) if !@@status_save
+    render json: :sucess, status: :created if @status_save
+    json_errors(resource_) if !@status_save
     return
   end
 
@@ -111,12 +111,12 @@ class BaseController < ApplicationController
     ActiveRecord::Base.transaction do
       accept_params[:_json].each do |update|
         resource_ = resources.find(update[:id])
-        @@status_save = false if !resource_.update(update)
+        @status_save = false if !resource_.update(update)
         raise ActiveRecord::Rollback if !resource_.update(update)
       end
     end
-    render json: :sucess, status: :created if @@status_save
-    json_errors(resource_) if !@@status_save
+    render json: :sucess, status: :created if @status_save
+    json_errors(resource_) if !@status_save
     return
   end
 

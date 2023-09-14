@@ -4,8 +4,8 @@ class CreateDenunciations < ActiveRecord::Migration[7.0]
       t.references :source_system, null: false, foreign_key: true
       t.bigint :origin_id, null: true
       t.references :crime_type, null: false, foreign_key: true
-      t.references :violence_type, null: false, foreign_key: true
-      t.references :violence_motivation, null: true, foreign_key: true
+      t.references :violence_type, null: true, foreign_key: true
+      t.references :violence_motivation, true: true, foreign_key: true
       t.bigint :victim_id, null: false
       t.bigint :aggressor_id, null: true
       t.string :number, null: false
@@ -16,6 +16,7 @@ class CreateDenunciations < ActiveRecord::Migration[7.0]
       t.boolean :justified, null: true
       t.boolean :aggressor_have_access_firearm, null: true
       t.string :occurrence_place, null: true
+      t.references :neighborhood, null: true, foreign_key: true
       t.bigint :occurrence_neighborhood_id, null: true
       t.string :occurrence_street_name, null: true
       t.string :occurrence_street_number, null: true
@@ -27,6 +28,5 @@ class CreateDenunciations < ActiveRecord::Migration[7.0]
     end
     add_foreign_key :denunciations, :people, column: :victim_id
     add_foreign_key :denunciations, :people, column: :aggressor_id
-    add_foreign_key :denunciations, :neighborhoods, column: :occurrence_neighborhood_id
   end
 end

@@ -1,0 +1,41 @@
+{
+    "_id": "f24c0ddb-3144-4f24-b29c-2aa4e50acaf7",
+    "colName": "Menus",
+    "created": "2022-11-03T18:24:29.281Z",
+    "sortNum": 60000,
+    "folders": [],
+    "requests": [
+        {
+            "_id": "839ce67d-8322-482c-89f4-6dc08433625d",
+            "colId": "f24c0ddb-3144-4f24-b29c-2aa4e50acaf7",
+            "containerId": "",
+            "name": "Index",
+            "url": "{{servidor}}/menus",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2022-11-03T18:24:29.304Z",
+            "modified": "2023-05-14T21:33:16.062Z",
+            "headers": [
+                {
+                    "name": "access-token",
+                    "value": "{{access_token}}"
+                },
+                {
+                    "name": "uid",
+                    "value": "{{email}}"
+                },
+                {
+                    "name": "client",
+                    "value": "{{client}}"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"action_code\" : 300\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}

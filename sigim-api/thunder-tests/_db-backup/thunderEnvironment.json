@@ -1,0 +1,53 @@
+[
+  {
+    "_id": "c0c7561c-8980-4443-a011-f96f368d2b4b",
+    "name": "(Global Env)",
+    "default": false,
+    "global": true,
+    "sortNum": -2,
+    "created": "2022-11-02T17:22:24.385Z",
+    "modified": "2022-11-29T13:34:19.058Z",
+    "data": [
+      {
+        "name": "email",
+        "value": "admin@admin.com"
+      },
+      {
+        "name": "password",
+        "value": "12345678"
+      },
+      {
+        "name": "confirmed_at",
+        "value": "2022-11-02T17:23:35.187Z"
+      },
+      {
+        "name": "servidor",
+        "value": "http://localhost:3000/api"
+      },
+      {
+        "name": "access_token",
+        "value": "SKvTD2TXGfVxq8iigS42nA"
+      },
+      {
+        "name": "client",
+        "value": "5mOwI4Tt_k3MJHeUEZXL7w"
+      },
+      {
+        "name": "cpf",
+        "value": "111.111.111-12"
+      },
+      {
+        "name": "confirmed_at",
+        "value": "2022-11-07 17:34:04.055875"
+      },
+      {
+        "name": "email2",
+        "value": "admin5@admin.com"
+      },
+      {
+        "name": "cpf2",
+        "value": "111.111.111-15"
+      }
+    ]
+  }
+]

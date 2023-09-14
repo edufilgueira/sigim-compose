@@ -14,7 +14,7 @@ module Normalize
     end
 
     def set_normalize
-      self.name = self.name.mb_chars.upcase
+      self.name = self.name.sem_acento.mb_chars.upcase
     end
   end
 

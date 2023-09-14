@@ -3,21 +3,21 @@ require 'fonetica'
 puts "Bairros do Ceará >>>"
 
 state_id = State.find_by(initials: 'CE')
-@c = City.find_or_create_by(name: "Abaiara".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Abaiara".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Abílio Martins".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Abílio Martins".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Acarape".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Acarape".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Marrecos", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Sao Benedito", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Sao Joao", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Acaraú".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Acaraú".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Acude Novo", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Campo Aviacao", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
@@ -27,14 +27,14 @@ Neighborhood.find_or_create_by(name: "Outra Banda", city_id: @c.id)
 Neighborhood.find_or_create_by(name: "Paulo vi", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Pedrinhas", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Perseguida", city_id: @c.id) 
-Neighborhood.find_or_create_by(name: "Plnt Bailharina", city_id: @c.id) 
+Neighborhood.find_or_create_by(name: "Planalto Bailharina", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Saguim", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Sitio Buriti", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Acende Candeia".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Acende Candeia".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Acopiara".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Acopiara".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Colchete", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Moreiras", city_id: @c.id) 
@@ -45,93 +45,93 @@ Neighborhood.find_or_create_by(name: "Vila Palmeira", city_id: @c.id)
 Neighborhood.find_or_create_by(name: "Vila Sao Joao", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Açude dos Pinheiros".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Açude dos Pinheiros".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Adrianópolis".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Adrianópolis".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Agrovila".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Agrovila".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Água Branca".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Água Branca".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Água Fria".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Água Fria".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Água Verde".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Água Verde".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Águas Belas".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Águas Belas".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Aiua".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Aiua".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Aiuaba".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Aiuaba".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Camarao", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Limao", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Alagoinha".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Alagoinha".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Alcântaras".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Alcântaras".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Alto Bela Vista", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Cohab", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Aleixo".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Aleixo".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Algodőes".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Algodőes".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Almas".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Almas".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Almofala".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Almofala".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Altaneira".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Altaneira".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Ossian Araripe", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Padre Cicero", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Alto da Várzea".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Alto da Várzea".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Alto do Garrote".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Alto do Garrote".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Alto dos Honorios".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Alto dos Honorios".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Alto Fechado".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Alto Fechado".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Alto Lindo".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Alto Lindo".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Alto Santo".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Alto Santo".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Amanaiara".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Amanaiara".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Amanari".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Amanari".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Vila Do Dnocs", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Amaniutuba".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Amaniutuba".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Amaro - Assaré".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Amaro - Assaré".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "América".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "América".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Amontada".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Amontada".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Buenos Aires", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Campo", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
@@ -141,43 +141,43 @@ Neighborhood.find_or_create_by(name: "Sao Raimundo", city_id: @c.id)
 Neighborhood.find_or_create_by(name: "Sao Sebastiao", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Anauá".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Anauá".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Anil".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Anil".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Anjinhos".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Anjinhos".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Antonico".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Antonico".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Antonina do Norte".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Antonina do Norte".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Castelo Branco", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Planalto", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Serraria", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Antônio Diogo".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Antônio Diogo".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Colonia", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "n Antonio Diogo", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Antonópolis".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Antonópolis".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Aprazível".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Aprazível".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Apuiarés".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Apuiarés".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Sao Francisco", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Aquiraz".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Aquiraz".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Alto Alegre", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Alto Prainha", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Amadeu Furtado", city_id: @c.id) 
@@ -212,9 +212,9 @@ Neighborhood.find_or_create_by(name: "Sitio Colegio", city_id: @c.id)
 Neighborhood.find_or_create_by(name: "Sitio Palmeiras", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Araçá".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Araçá".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Aracati".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Aracati".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Aterro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Cacimba Povo", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Campo Verde", city_id: @c.id) 
@@ -234,7 +234,7 @@ Neighborhood.find_or_create_by(name: "Várzea da Matriz", city_id: @c.id)
 Neighborhood.find_or_create_by(name: "Vila União", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Aracoiaba".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Aracoiaba".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Cohab", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Jaguarao", city_id: @c.id) 
@@ -243,74 +243,74 @@ Neighborhood.find_or_create_by(name: "Sao Francisco", city_id: @c.id)
 Neighborhood.find_or_create_by(name: "Solom Lima Verde", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Arajara".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Arajara".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Aranaú".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Aranaú".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Arapá".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Arapá".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Arapari".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Arapari".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Araporanga".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Araporanga".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Araquém".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Araquém".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Araras".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Araras".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Ararendá".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Ararendá".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Varjota", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Araripe".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Araripe".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Cipauba", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Cohab", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Aratama".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Aratama".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Araticum".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Araticum".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Araticuns".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Araticuns".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Aratuba".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Aratuba".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Areial".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Areial".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Arisco dos Marianos".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Arisco dos Marianos".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Arneiroz".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Arneiroz".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Arneroizinho", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Aroeiras - Coreaú".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Aroeiras - Coreaú".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Arraial".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Arraial".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Arrojado".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Arrojado".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Aruaru".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Aruaru".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Assaré".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Assaré".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Casas Populares", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Jose Dodo", city_id: @c.id) 
@@ -319,17 +319,17 @@ Neighborhood.find_or_create_by(name: "Vila Pedra Fogo", city_id: @c.id)
 Neighborhood.find_or_create_by(name: "Vila Salvador", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Assentamento Escalvado".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Assentamento Escalvado".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Assis".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Assis".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Assunção - Itapipoca".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Assunção - Itapipoca".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Assunção - Solonópole".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Assunção - Solonópole".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Aurora".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Aurora".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Araca", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Cohab", city_id: @c.id) 
@@ -337,43 +337,43 @@ Neighborhood.find_or_create_by(name: "Sao Benedito", city_id: @c.id)
 Neighborhood.find_or_create_by(name: "Vila Vino Leite", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Baixa das Carnaubas".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Baixa das Carnaubas".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Baixa Larga".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Baixa Larga".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Baixinha Velha".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Baixinha Velha".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Baixio".mb_chars.upcase, state_id: state_id)
-Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
-Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
-
-@c = City.find_or_create_by(name: "Baixio - Deputado Irapuan Pinheiro".mb_chars.upcase, state_id: state_id)
-Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
-
-@c = City.find_or_create_by(name: "Baixio - Jijoca de Jericoacoara".mb_chars.upcase, state_id: state_id)
-Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
-
-@c = City.find_or_create_by(name: "Baixio - Quiterianópolis".mb_chars.upcase, state_id: state_id)
-Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
-
-@c = City.find_or_create_by(name: "Balneário dos Caldas".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Baixio".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Banabuiú".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Baixio - Deputado Irapuan Pinheiro".sem_acento.mb_chars.upcase, state_id: state_id)
+Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
+
+@c = City.find_or_create_by(name: "Baixio - Jijoca de Jericoacoara".sem_acento.mb_chars.upcase, state_id: state_id)
+Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
+
+@c = City.find_or_create_by(name: "Baixio - Quiterianópolis".sem_acento.mb_chars.upcase, state_id: state_id)
+Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
+
+@c = City.find_or_create_by(name: "Balneário dos Caldas".sem_acento.mb_chars.upcase, state_id: state_id)
+Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
+Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
+
+@c = City.find_or_create_by(name: "Banabuiú".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Alto Alegre", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Esperanca", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Vila n s Carmo", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Bandeira".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Bandeira".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Barbalha".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Barbalha".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Alto Alegria", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Barreiras", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Bela Vista", city_id: @c.id) 
@@ -385,61 +385,61 @@ Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id)
 Neighborhood.find_or_create_by(name: "Estrela", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Lagoa Seca", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Malvinas", city_id: @c.id) 
-Neighborhood.find_or_create_by(name: "Mata", city_id: @c.id) 
+Neighborhood.find_or_create_by(name: "Mata do Araçá", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Novo Rosario", city_id: @c.id) 
-Neighborhood.find_or_create_by(name: "Ns Fátima", city_id: @c.id) 
+Neighborhood.find_or_create_by(name: "NOSSA SENHORA DE FATIMA", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Parque Bulandeira", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Parque Cirolandia", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Rosario", city_id: @c.id) 
-Neighborhood.find_or_create_by(name: "Sit Mata Judas", city_id: @c.id) 
+Neighborhood.find_or_create_by(name: "Sitio Mata Judas", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Vila Santo Antônio", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Barra - Aiuaba".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Barra - Aiuaba".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Barra - Fortim".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Barra - Fortim".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Barra da Sucatinga".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Barra da Sucatinga".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Barra do Caxitore".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Barra do Caxitore".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Barra do Sotero".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Barra do Sotero".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Barra Nova - Cascavel".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Barra Nova - Cascavel".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Barra Nova - Redenção".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Barra Nova - Redenção".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Barreira".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Barreira".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Bom Sucesso", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Jatoba Dois", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Mearim Tres", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Barreiras - Iguatu".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Barreiras - Iguatu".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Barreiras Vianas".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Barreiras Vianas".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Barreiros - Potengi".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Barreiros - Potengi".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Barreiros - São Benedito".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Barreiros - São Benedito".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Barrento".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Barrento".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Barrinha - Saboeiro".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Barrinha - Saboeiro".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Barro".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Barro".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Casas Populares", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Gangorra", city_id: @c.id) 
@@ -448,20 +448,20 @@ Neighborhood.find_or_create_by(name: "Vila S José", city_id: @c.id)
 Neighborhood.find_or_create_by(name: "Vila Trajano Nogueira", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Barro Alto".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Barro Alto".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Barroquinha".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Barroquinha".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Caucaia", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Bastiőes".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Bastiőes".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Batoque".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Batoque".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Baturité".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Baturité".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Beira Rio", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Boa Vista", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
@@ -480,19 +480,20 @@ Neighborhood.find_or_create_by(name: "Putiu", city_id: @c.id)
 Neighborhood.find_or_create_by(name: "Sao Francisco", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Baú".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Baú".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Beberibe".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Beberibe".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Cohab", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Estrada Grande", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Jose Bessa", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Novo Planalto", city_id: @c.id) 
-Neighborhood.find_or_create_by(name: "Plnt Beberibe", city_id: @c.id) 
+Neighborhood.find_or_create_by(name: "Planalto Beberibe", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Praia Fontes", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
+Neighborhood.find_or_create_by(name: "SUCATINGA", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Bela Cruz".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Bela Cruz".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Amazonas", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Areias", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Brasilia", city_id: @c.id) 
@@ -502,51 +503,51 @@ Neighborhood.find_or_create_by(name: "Corrego Grande", city_id: @c.id)
 Neighborhood.find_or_create_by(name: "São Paulo", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Bela Vista".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Bela Vista".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Bela Vista - Crato".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Bela Vista - Crato".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Belmonte".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Belmonte".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Bento Pereira".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Bento Pereira".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Besouro".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Besouro".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Betânia - Croatá".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Betânia - Croatá".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Betânia - Deputado Irapuan Pinheiro".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Betânia - Deputado Irapuan Pinheiro".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Betânia - Hidrolândia".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Betânia - Hidrolândia".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Betânia - Ibiapina".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Betânia - Ibiapina".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Betânia - Itapipoca".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Betânia - Itapipoca".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Bilheira".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Bilheira".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Bitupitá".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Bitupitá".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Bixopá".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Bixopá".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Boa Água".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Boa Água".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Boa Esperança - Moraújo".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Boa Esperança - Moraújo".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Boa Esperança - Tamboril".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Boa Esperança - Tamboril".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Boa Viagem".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Boa Viagem".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Boa Viaginha", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Boa Vista", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Capitao Mor", city_id: @c.id) 
@@ -558,46 +559,46 @@ Neighborhood.find_or_create_by(name: "Varzea Canto", city_id: @c.id)
 Neighborhood.find_or_create_by(name: "Vila Holanda", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Boa Vista - Mombaça".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Boa Vista - Mombaça".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Boa Vista - Paraipaba".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Boa Vista - Paraipaba".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Bom Gosto".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Bom Gosto".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Bom Jesus".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Bom Jesus".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Bom Nome".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Bom Nome".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Bom Princípio - Morrinhos".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Bom Princípio - Morrinhos".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Bonfim Km 20".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Bonfim Km 20".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Bonito - Caninde".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Bonito - Caninde".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Boqueirão - Ico".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Boqueirão - Ico".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Boqueirão Cesário".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Boqueirão Cesário".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Borges".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Borges".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Borronca".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Borronca".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Brejinho - Araripe".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Brejinho - Araripe".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Brejo Grande".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Brejo Grande".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Brejo Santo".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Brejo Santo".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Aldeota", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Alto Bela Vista", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Araujao", city_id: @c.id) 
@@ -613,80 +614,80 @@ Neighborhood.find_or_create_by(name: "Taboqueira", city_id: @c.id)
 Neighborhood.find_or_create_by(name: "Vila Capile", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Brito - Itaicaba".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Brito - Itaicaba".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Brotas".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Brotas".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Buritizal".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Buritizal".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Buritizinho - Mauriti".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Buritizinho - Mauriti".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Cabeceira de Baixo".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Cabeceira de Baixo".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Cachoeira".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Cachoeira".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Cachoeira".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Cachoeira".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Cacimbas - Jardim".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Cacimbas - Jardim".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Cacimbas -Carire".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Cacimbas -Carire".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Cacoeira de Fora".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Cacoeira de Fora".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Caetanos".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Caetanos".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Café da Linha".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Café da Linha".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Cágado".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Cágado".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Caiçara - Cruz".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Caiçara - Cruz".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Caiçaras".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Caiçaras".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Caio Prado".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Caio Prado".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Caipu".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Caipu".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Cajazeiras".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Cajazeiras".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Cajazeiras do Semeão".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Cajazeiras do Semeão".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Cajueirinho".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Cajueirinho".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Cajueiro - Aracati".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Cajueiro - Aracati".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Cajueiro - Barreira".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Cajueiro - Barreira".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Califórnia".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Califórnia".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Câmara - Aquiraz".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Câmara - Aquiraz".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Câmara - Itapipoca".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Câmara - Itapipoca".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Camboas - Paraipaba".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Camboas - Paraipaba".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Camilos".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Camilos".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Camocim".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Camocim".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Boa Esperanca", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Brasilia", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
@@ -707,17 +708,15 @@ Neighborhood.find_or_create_by(name: "Sao Francisco", city_id: @c.id)
 Neighborhood.find_or_create_by(name: "Sao Pedro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Campanário".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Campanário".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Campestre - Trairi".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Campestre I".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Campestre I".mb_chars.upcase, state_id: state_id)
-
-@c = City.find_or_create_by(name: "Campo Grande".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Campo Grande".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Campos Sales".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Campos Sales".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Alto Alegre", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Aparecida", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Azarias Pe", city_id: @c.id) 
@@ -734,16 +733,16 @@ Neighborhood.find_or_create_by(name: "Padre Nobre", city_id: @c.id)
 Neighborhood.find_or_create_by(name: "Vila Mariana", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Campos Verdes".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Campos Verdes".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Cana Brava".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Cana Brava".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Canaã".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Canaã".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Cangati - Solonopolis".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Cangati - Solonopolis".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Canindé".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Canindé".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Alto Guaramiranga", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Alto Tiro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Bela Vista", city_id: @c.id) 
@@ -766,37 +765,37 @@ Neighborhood.find_or_create_by(name: "Santo Antonio", city_id: @c.id)
 Neighborhood.find_or_create_by(name: "Sao Mateus", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Canindezinho - Ibicuitinga".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Canindezinho - Ibicuitinga".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Canindezinho - Nova Russas".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Canindezinho - Nova Russas".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Caninhas".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Caninhas".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Canoa Quebrada".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Canoa Quebrada".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Esteves", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Cantagalo".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Cantagalo".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Canto".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Canto".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Capim de Roça".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Capim de Roça".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Capistrano".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Capistrano".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Boa Esperanca", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Capitão Mor".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Capitão Mor".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Capivara".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Capivara".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Caponga".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Caponga".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Aguas Belas", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Barra Mar", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
@@ -808,33 +807,33 @@ Neighborhood.find_or_create_by(name: "Praia Caponga", city_id: @c.id)
 Neighborhood.find_or_create_by(name: "Sitio Murici", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Vila Peri", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Caponga da Bernarda".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Caponga da Bernarda".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Caracanga".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Caracanga".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Caracara - Aquiraz".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Caracara - Aquiraz".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Carapió".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Carapió".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Caraúbas".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Caraúbas".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Caridade".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Caridade".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Cohab", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Cariré".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Cariré".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Acude Novo", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Caixa Dagua", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Campo Aviacao", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Urbana", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Caririaçú".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Caririaçú".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Abilio Unias", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Bico Arara", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
@@ -843,41 +842,41 @@ Neighborhood.find_or_create_by(name: "Pe Vicente Feitosa", city_id: @c.id)
 Neighborhood.find_or_create_by(name: "Pernambuquinho", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Santo Antonio", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Cariús".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Cariús".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Esplanada", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Novo Horizonte", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Vila Nova", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Cariutaba".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Cariutaba".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Carmelópolis".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Carmelópolis".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Carnaubal".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Carnaubal".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Boa Hora", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Cruzeiro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "São Vicente", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Carnaubinha".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Carnaubinha".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Carquejo".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Carquejo".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Carro Atolado".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Carro Atolado".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Caruataí".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Caruataí".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Carvoeiro".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Carvoeiro".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Cascavel".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Cascavel".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Alto Luminoso", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Amazonica", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Becelandia", city_id: @c.id) 
@@ -896,30 +895,30 @@ Neighborhood.find_or_create_by(name: "Rio Novo", city_id: @c.id)
 Neighborhood.find_or_create_by(name: "Sao Francisco", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Cascudo".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Cascudo".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Castanhão".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Castanhão".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Catarina".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Catarina".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Vila Nova", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Catolé da Pista".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Catolé da Pista".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Catuana".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Catuana".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Catunda".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Catunda".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Beira Rio", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Cauassu".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Cauassu".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Caucaia".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Caucaia".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Acude", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Alto do Garrote", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Arianópolis", city_id: @c.id) 
@@ -998,12 +997,12 @@ Neighborhood.find_or_create_by(name: "Vila Caze", city_id: @c.id)
 Neighborhood.find_or_create_by(name: "Vila Gois", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Caxitoré - Tejucuoca".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Caxitoré - Tejucuoca".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Caxitore - Umirim".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Caxitore - Umirim".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Cedro".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Cedro".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Acude Novo", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Afonso Celso", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
@@ -1015,74 +1014,74 @@ Neighborhood.find_or_create_by(name: "Rodoviaria", city_id: @c.id)
 Neighborhood.find_or_create_by(name: "Vila Operario", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Celsolândia".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Celsolândia".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Cemoaba".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Cemoaba".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Chaval".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Chaval".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Alto Formoso", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Cacamba", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Escondido", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Choró ".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Choró ".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Chorozinho".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Chorozinho".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Cidade Nova", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Parque s Jose", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Codiá".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Codiá".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Coité - Caucaia".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Coité - Caucaia".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Coité - Mauriti".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Coité - Mauriti".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Colônia dos Professores".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Colônia dos Professores".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Conceição - Hidrolândia".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Conceição - Hidrolândia".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Conceição - Tururu".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Conceição - Tururu".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Conjunto Pedrinhas".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Conjunto Pedrinhas".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Coqueiro - Cascavél".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Coqueiro - Cascavél".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Coqueiro - Horizonte".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Coqueiro - Horizonte".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Coreaú".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Coreaú".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Alto Sao Jose", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Cohab", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Córrego".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Córrego".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Córrego da Areia".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Córrego da Areia".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Córrego dos Fernandes".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Córrego dos Fernandes".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Correia".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Correia".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Corrente".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Corrente".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Crateús".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Crateús".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Altamira", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Cajas", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Campo Velho", city_id: @c.id) 
@@ -1102,7 +1101,7 @@ Neighborhood.find_or_create_by(name: "Sao Vicente", city_id: @c.id)
 Neighborhood.find_or_create_by(name: "Venancio", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Crato".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Crato".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "1 de Dezembro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Aeroporto", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Alto Penha", city_id: @c.id) 
@@ -1158,29 +1157,29 @@ Neighborhood.find_or_create_by(name: "Vitoria Nossa", city_id: @c.id)
 Neighborhood.find_or_create_by(name: "Zacarias Goncalves", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Crioulos - Pereiro".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Crioulos - Pereiro".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Cristais".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Cristais".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Croatá ".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Croatá ".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Caroba", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Croatá - Barreira".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Croatá - Barreira".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Croatá - Ocara".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Croatá - Ocara".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Croatá - São Gonçalo do Amarante".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Croatá - São Gonçalo do Amarante".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Croatá - Varjota".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Croatá - Varjota".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Cruz".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Cruz".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Aningas", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Brasilia", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
@@ -1189,75 +1188,75 @@ Neighborhood.find_or_create_by(name: "Sao Jose", city_id: @c.id)
 Neighborhood.find_or_create_by(name: "Sao Pedro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Cumbuco".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Cumbuco".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Cumbuco", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Lt Praia Da Tabuba", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Curral Velho".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Curral Velho".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Curupira".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Curupira".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Custódio".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Custódio".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Damião Carneiro".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Damião Carneiro".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Delmiro Gouveia".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Delmiro Gouveia".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Deputado Irapuan Pinheiro".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Deputado Irapuan Pinheiro".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Deserto".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Deserto".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Dom Leme".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Dom Leme".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Dom Maurício".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Dom Maurício".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Dom Quintino".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Dom Quintino".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Dourados".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Dourados".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Ema".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Ema".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Ematuba".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Ematuba".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Encantado".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Encantado".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Engenheiro João Tomé".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Engenheiro João Tomé".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Engenheiro José Lopes".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Engenheiro José Lopes".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Engenho dos Belém".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Engenho dos Belém".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Erere".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Erere".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Espinho - Guaraciaba do Norte".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Espinho - Guaraciaba do Norte".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Espinho - Limoeiro do Norte".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Espinho - Limoeiro do Norte".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Espraiado".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Espraiado".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Eusébio".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Eusébio".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Aeroporto", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Amador", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Ayrton Senna", city_id: @c.id) 
@@ -1314,40 +1313,40 @@ Neighborhood.find_or_create_by(name: "Timbu", city_id: @c.id)
 Neighborhood.find_or_create_by(name: "Tupuiu", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Vicente Pinzon", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Extrema Santa Luzia".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Extrema Santa Luzia".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Faísca - Redenção".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Faísca - Redenção".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Farias Brito".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Farias Brito".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Alecrim", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Boa Vista", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Calçadão", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Nova Esperanca", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Faveira".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Faveira".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Fazenda Nova".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Fazenda Nova".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Feiticeiro".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Feiticeiro".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Felizardo".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Felizardo".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Flamengo".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Flamengo".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Flexeiras".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Flexeiras".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Flores - Russas".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Flores - Russas".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Forquilha".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Forquilha".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Alto Alegre", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Edmundo Rodrigues", city_id: @c.id) 
@@ -1358,7 +1357,7 @@ Neighborhood.find_or_create_by(name: "Salsa", city_id: @c.id)
 Neighborhood.find_or_create_by(name: "Sebastiao Abreu", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Fortaleza".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Fortaleza".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "1 de Março", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "24 de Março", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "4 de Julho", city_id: @c.id) 
@@ -1375,8 +1374,6 @@ Neighborhood.find_or_create_by(name: "Aeronáutica", city_id: @c.id)
 Neighborhood.find_or_create_by(name: "Aeroporto", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Aeroporto Velho", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Água Fria", city_id: @c.id) 
-Neighborhood.find_or_create_by(name: "Água Fria/Ed Queiroz", city_id: @c.id) 
-Neighborhood.find_or_create_by(name: "Água Fria/Ed Queiroz", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Água Marinha", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Ajuda Mútua", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Alagadiço", city_id: @c.id) 
@@ -1454,9 +1451,10 @@ Neighborhood.find_or_create_by(name: "Casas Populares", city_id: @c.id)
 Neighborhood.find_or_create_by(name: "Castelão", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Castelo Encantado", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Caucaia", city_id: @c.id) 
-Neighborhood.find_or_create_by(name: "Ceará", city_id: @c.id) 
-Neighborhood.find_or_create_by(name: "Ceará i e ii Etapa", city_id: @c.id) 
-Neighborhood.find_or_create_by(name: "Ceará iv Etapa", city_id: @c.id) 
+Neighborhood.find_or_create_by(name: "Conjunto Ceará I Etapa", city_id: @c.id) 
+Neighborhood.find_or_create_by(name: "Conjunto Ceará II Etapa", city_id: @c.id) 
+Neighborhood.find_or_create_by(name: "Conjunto Ceará III Etapa", city_id: @c.id) 
+Neighborhood.find_or_create_by(name: "Conjunto Ceará IV Etapa", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Cento", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Centro Sul", city_id: @c.id) 
@@ -1470,9 +1468,8 @@ Neighborhood.find_or_create_by(name: "Cidade Nova", city_id: @c.id)
 Neighborhood.find_or_create_by(name: "Cidade Sul", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Cidade Verde", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Cinco s", city_id: @c.id) 
-Neighborhood.find_or_create_by(name: "Cj Pfto José Walter", city_id: @c.id) 
-Neighborhood.find_or_create_by(name: "Cj Plnt do Pici", city_id: @c.id) 
-Neighborhood.find_or_create_by(name: "Cj Pref Jose Walter", city_id: @c.id) 
+Neighborhood.find_or_create_by(name: "Cj Planalto do Pici", city_id: @c.id) 
+Neighborhood.find_or_create_by(name: "Cj Prefeito Jose Walter", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Cj S Cristóvão", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Cj S Miguel", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Cj S Pedro", city_id: @c.id) 
@@ -1483,9 +1480,6 @@ Neighborhood.find_or_create_by(name: "Com Carlos Chagas", city_id: @c.id)
 Neighborhood.find_or_create_by(name: "Comércio", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Cond Estrela da Manhã", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Conjunto Cantinho do Céu", city_id: @c.id) 
-Neighborhood.find_or_create_by(name: "Conjunto Ceará 1ª e 2ª Et", city_id: @c.id) 
-Neighborhood.find_or_create_by(name: "Conjunto Ceará 1ª e 2ª Etapa", city_id: @c.id) 
-Neighborhood.find_or_create_by(name: "Conjunto Ceará 4ª Etapa", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Conjunto Jereissati I", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Conjunto Jereissati II", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Conjunto Jereissati III", city_id: @c.id) 
@@ -1583,7 +1577,6 @@ Neighborhood.find_or_create_by(name: "Jacarecanga", city_id: @c.id)
 Neighborhood.find_or_create_by(name: "Jacareganga", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Jacarepaguá", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Jaciara", city_id: @c.id) 
-Neighborhood.find_or_create_by(name: "Jaoquim Távora", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Jardim Aldeota", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Jardim América", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Jardim Bandeirantes", city_id: @c.id) 
@@ -1608,14 +1601,12 @@ Neighborhood.find_or_create_by(name: "Jardim Santa Lucia", city_id: @c.id)
 Neighborhood.find_or_create_by(name: "Jardim Sumaré", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Jardim União", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Jereissati", city_id: @c.id) 
-Neighborhood.find_or_create_by(name: "Joao 23", city_id: @c.id) 
+Neighborhood.find_or_create_by(name: "Joao XXIII", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "João Arruda", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "João Paulo ii", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Joaquim Távora", city_id: @c.id) 
-Neighborhood.find_or_create_by(name: "JoaquimTávora", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Jóquei Clube", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "José Bonifácio", city_id: @c.id) 
-Neighborhood.find_or_create_by(name: "José Walter", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Jungurussu", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Jurema", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Jurema Park", city_id: @c.id) 
@@ -1634,8 +1625,8 @@ Neighborhood.find_or_create_by(name: "Loteamento Hípica Park", city_id: @c.id)
 Neighborhood.find_or_create_by(name: "Loteamento Pajuçara Park", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Loteamento Parque N Messejana", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Loteamento Planalto Uece", city_id: @c.id) 
-Neighborhood.find_or_create_by(name: "Loteamento Plnt Coaçú", city_id: @c.id) 
-Neighborhood.find_or_create_by(name: "Loteamento Plnt Metrópole", city_id: @c.id) 
+Neighborhood.find_or_create_by(name: "Loteamento Planalto Coaçú", city_id: @c.id) 
+Neighborhood.find_or_create_by(name: "Loteamento Planalto Metrópole", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Loteamento Village Colosso", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Lt Cajazeiras I", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Lt Parque Elisabeth", city_id: @c.id) 
@@ -1745,7 +1736,6 @@ Neighborhood.find_or_create_by(name: "Paupina", city_id: @c.id)
 Neighborhood.find_or_create_by(name: "Pedra", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Pedras", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Pequeno Ramos", city_id: @c.id) 
-Neighborhood.find_or_create_by(name: "Pf José Walter", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Pici", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Piedade", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Pinto Madeira", city_id: @c.id) 
@@ -1792,7 +1782,6 @@ Neighborhood.find_or_create_by(name: "Pq Jerusalém", city_id: @c.id)
 Neighborhood.find_or_create_by(name: "Pq Manibura", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Pq Maraponga", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Pq Mondubim", city_id: @c.id) 
-Neighborhood.find_or_create_by(name: "Pq Mondubim", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Pq Novo Mondubim", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Pq Potira", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Pq Rio Bonito", city_id: @c.id) 
@@ -1809,8 +1798,6 @@ Neighborhood.find_or_create_by(name: "Pq Stana i", city_id: @c.id)
 Neighborhood.find_or_create_by(name: "Pq Tabapuã", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Pq Tropical", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Praia de Iracema", city_id: @c.id) 
-Neighborhood.find_or_create_by(name: "Praia de Iracema/Centro", city_id: @c.id) 
-Neighborhood.find_or_create_by(name: "Praia de Iracema/Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Praia de Irecema", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Praia do Futuro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Precabura", city_id: @c.id) 
@@ -1936,8 +1923,9 @@ Neighborhood.find_or_create_by(name: "Vl Velha iv", city_id: @c.id)
 Neighborhood.find_or_create_by(name: "Washington Soares", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zamura", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zenaide Magalhães", city_id: @c.id) 
+Neighborhood.find_or_create_by(name: "MANUEL DIAS BRANCO", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Fortim".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Fortim".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Barra", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Capim Acu", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
@@ -1945,48 +1933,48 @@ Neighborhood.find_or_create_by(name: "Felix Maloca", city_id: @c.id)
 Neighborhood.find_or_create_by(name: "Vicosa", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Francalina do Norte".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Francalina do Norte".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Frecheirinha".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Frecheirinha".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Iracema", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Lapa", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Ns Fátima", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Fronteiro".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Fronteiro".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Gangorrinha".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Gangorrinha".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Gazea".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Gazea".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "General Sampaio".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "General Sampaio".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Genezaré".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Genezaré".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Genipapeiro".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Genipapeiro".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Gereraú".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Gereraú".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Giqui".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Giqui".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Goianá".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Goianá".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Graça".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Graça".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Sao Vicente", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Granja".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Granja".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Alto Pescadores", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Antonio Gouveia", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
@@ -1998,18 +1986,19 @@ Neighborhood.find_or_create_by(name: "Promorar", city_id: @c.id)
 Neighborhood.find_or_create_by(name: "Sao Pedro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Vicente Arruda", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
+Neighborhood.find_or_create_by(name: "ADRIANOPOLES", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Granjeiro".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Granjeiro".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zumira Marques", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Groaíras".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Groaíras".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Cap Jose Linhares", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Cohab", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Paulo Malaquias", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Guaiúba".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Guaiúba".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Francisco Gois", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Mata Fresca", city_id: @c.id) 
@@ -2017,56 +2006,54 @@ Neighborhood.find_or_create_by(name: "Pinheiro", city_id: @c.id)
 Neighborhood.find_or_create_by(name: "Sao Jose", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Guajiru - Fortim".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Guajiru - Fortim".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Guajiru - Trairi".mb_chars.upcase, state_id: state_id)
-
-@c = City.find_or_create_by(name: "Gualdrapas".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Gualdrapas".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Guanacés - Cascavel".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Guanacés - Cascavel".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Vila Nova", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Guaraciaba do Norte".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Guaraciaba do Norte".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Belo Horizonte", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Lagoinha", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Mons Eurico", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Guaraibas".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Guaraibas".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Guaramiranga".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Guaramiranga".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Cj Hab M Castro Fª", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "m Castro Filho", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Guarani".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Guarani".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Guarda".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Guarda".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Guassi".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Guassi".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Guassusse".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Guassusse".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Guia".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Guia".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Hidrolândia".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Hidrolândia".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Marinha", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Nova Hidrolândia", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Progresso", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Holanda".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Holanda".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Horizonte".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Horizonte".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Alto Boa Vista", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Area Verde", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Buenos Aires", city_id: @c.id) 
@@ -2081,51 +2068,52 @@ Neighborhood.find_or_create_by(name: "Lt Parque Diamantina", city_id: @c.id)
 Neighborhood.find_or_create_by(name: "Mangueiral", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Marechal Cozinhado", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Parque Recreio", city_id: @c.id) 
-Neighborhood.find_or_create_by(name: "Plnt Horizonte", city_id: @c.id) 
+Neighborhood.find_or_create_by(name: "Planalto Horizonte", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Pq Diadema", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zumbi", city_id: @c.id) 
+Neighborhood.find_or_create_by(name: "Alto do Estrela", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Iara".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Iara".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Ibaretama".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Ibaretama".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Ibiapaba".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Ibiapaba".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Ibiapina".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Ibiapina".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Estadao", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Parq Centenario", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Sao Joao", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Sao Jose", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Ibicuã".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Ibicuã".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Ibicuitaba".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Ibicuitaba".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Ibicuitinga".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Ibicuitinga".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Iborepi".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Iborepi".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Ibuaçu - Boa Viagem".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Ibuaçu - Boa Viagem".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Ibuaçu - Granja".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Ibuaçu - Granja".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Ibuguaçu".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Ibuguaçu".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Icapuí".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Icapuí".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Barreiras", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Cajuas", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
@@ -2135,10 +2123,10 @@ Neighborhood.find_or_create_by(name: "Sem Bairro", city_id: @c.id)
 Neighborhood.find_or_create_by(name: "Serra", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Icaraí - Amontada".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Icaraí - Amontada".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Icaraí - Caucaia".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Icaraí - Caucaia".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Barra Nova", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Brasilia", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
@@ -2162,7 +2150,7 @@ Neighborhood.find_or_create_by(name: "Parque Veraneio", city_id: @c.id)
 Neighborhood.find_or_create_by(name: "Planalto Icaracui", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Planalto Icaraí", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Planalto Pacheco", city_id: @c.id) 
-Neighborhood.find_or_create_by(name: "Plnt Eveline", city_id: @c.id) 
+Neighborhood.find_or_create_by(name: "Planalto Eveline", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Praia Icaraí", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Praia Tabuba", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "s Veraneio", city_id: @c.id) 
@@ -2171,7 +2159,7 @@ Neighborhood.find_or_create_by(name: "Solar Icaraí", city_id: @c.id)
 Neighborhood.find_or_create_by(name: "Vila São João", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Urbana", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Icó".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Icó".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Alto Bastos", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Alto Cooperativa", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Alto Inácio Amâncio", city_id: @c.id) 
@@ -2199,23 +2187,23 @@ Neighborhood.find_or_create_by(name: "Sao Vicente Paulo", city_id: @c.id)
 Neighborhood.find_or_create_by(name: "Uberlandia", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Icozinho".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Icozinho".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Ideal".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Ideal".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Igaroí".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Igaroí".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Iguape - Jacaúna".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Iguape - Jacaúna".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Alto Iguape", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Barro Preto", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Iguape", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Praia Presidio", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Iguatu".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Iguatu".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Altiplano", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Alto Bonita", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Alto Juca", city_id: @c.id) 
@@ -2263,55 +2251,55 @@ Neighborhood.find_or_create_by(name: "Vila Jardim Iguatu", city_id: @c.id)
 Neighborhood.find_or_create_by(name: "Vila Neuma", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Ilha dos Coqueiros".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Ilha dos Coqueiros".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Independęncia".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Independęncia".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Cohab", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Liberdade", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Pelo Sinal", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Ingazeiras".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Ingazeiras".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Inhamuns".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Inhamuns".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Inhuçu".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Inhuçu".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Inhumas".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Inhumas".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Inhuporanga".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Inhuporanga".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Ipaguaçu".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Ipaguaçu".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Ipaporanga".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Ipaporanga".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Central", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Iparana".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Iparana".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Boi Choco", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Loteamento Colônia Iparana", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Pacheco", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Parque Leblon", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Ipaumirim".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Ipaumirim".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Caixa D'agua", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Vila Bancarios", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Ipiranga".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Ipiranga".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Ipú".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Ipú".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Aldeota", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Alto Boa Vista", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Alto Catorze", city_id: @c.id) 
@@ -2325,16 +2313,16 @@ Neighborhood.find_or_create_by(name: "Pereiro", city_id: @c.id)
 Neighborhood.find_or_create_by(name: "Rei Franca", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Ipú Mazagão".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Ipú Mazagão".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Ipueiras".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Ipueiras".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Estacao", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Vamos Ver", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Vila Nova", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Iracema".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Iracema".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Acampamento", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Jatoba", city_id: @c.id) 
@@ -2343,28 +2331,28 @@ Neighborhood.find_or_create_by(name: "Paz", city_id: @c.id)
 Neighborhood.find_or_create_by(name: "Pedra Bola", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Irajá".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Irajá".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Iratinga".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Iratinga".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Irauçuba".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Irauçuba".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Bairro Cruzeiro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Esperança", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Gil Bastos", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Isidoro".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Isidoro".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Itacima".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Itacima".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Itagua".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Itagua".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Itaiçaba".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Itaiçaba".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Alto Brito", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Beira Rio", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
@@ -2372,10 +2360,10 @@ Neighborhood.find_or_create_by(name: "Itaicaba", city_id: @c.id)
 Neighborhood.find_or_create_by(name: "Sao Francisco", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Tabuleiro Luma", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Itaipaba".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Itaipaba".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Itaitinga".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Itaitinga".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Agorar", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Antonio Miguel", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Carapio", city_id: @c.id) 
@@ -2392,10 +2380,10 @@ Neighborhood.find_or_create_by(name: "Santa Maria", city_id: @c.id)
 Neighborhood.find_or_create_by(name: "Vila Machado", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Itans".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Itans".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Itapagé".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Itapagé".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Acude", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Antonio Braga", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Carnaubinha", city_id: @c.id) 
@@ -2417,16 +2405,16 @@ Neighborhood.find_or_create_by(name: "São Francisco", city_id: @c.id)
 Neighborhood.find_or_create_by(name: "Sao Pedro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Vitalino Peixe", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Itapai".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Itapai".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Itapebussu".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Itapebussu".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Itapeim".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Itapeim".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Itapipoca".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Itapipoca".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "31 de Agosto", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "31 de Março", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Alto Alegre", city_id: @c.id) 
@@ -2450,45 +2438,45 @@ Neighborhood.find_or_create_by(name: "Sao Sebastiao", city_id: @c.id)
 Neighborhood.find_or_create_by(name: "Violete", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Itapiúna".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Itapiúna".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Itarema".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Itarema".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Gargueto", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Itapaje", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Sao Vicente", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Itatira".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Itatira".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Lagoa Mato", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Jaburuna".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Jaburuna".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Jacarecoara".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Jacarecoara".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Jaguarão".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Jaguarão".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Jaguaretama".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Jaguaretama".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Cohab", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Ns Conceicao", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Vila Adao", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Jaguaribara".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Jaguaribara".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Nova Jaguaribara", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Prof Monteiro Morais", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Jaguaribe".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Jaguaribe".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Aldeota", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Caixa", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
@@ -2507,7 +2495,7 @@ Neighborhood.find_or_create_by(name: "Placa Verde", city_id: @c.id)
 Neighborhood.find_or_create_by(name: "Vila Curralinho", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Jaguaruana".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Jaguaruana".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Alto Caatinga", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Caatinguinha", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Cardeais", city_id: @c.id) 
@@ -2517,56 +2505,56 @@ Neighborhood.find_or_create_by(name: "Juazeiro", city_id: @c.id)
 Neighborhood.find_or_create_by(name: "Parque Alto Alegre", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Jaibaras".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Jaibaras".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Acp do Dnocs", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Alto Alegre", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Jamacaru".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Jamacaru".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Jardim".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Jardim".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Cohab", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Fátima", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Jardim de Cima".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Jardim de Cima".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Jardim São José".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Jardim São José".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Jati".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Jati".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Jatobá".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Jatobá".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Jericoacoara".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Jericoacoara".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Sem Bairro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Jijoca de Jericoacoara".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Jijoca de Jericoacoara".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Lagoa Do Paraíso", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Jordão".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Jordão".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "José de Alencar".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "José de Alencar".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Juá".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Juá".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Juatama".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Juatama".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Juazeiro".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Juazeiro".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Juazeiro do Norte".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Juazeiro do Norte".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Aeroporto", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Afonso Dias", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Alto Alegria", city_id: @c.id) 
@@ -2629,14 +2617,14 @@ Neighborhood.find_or_create_by(name: "Triangulo", city_id: @c.id)
 Neighborhood.find_or_create_by(name: "Vila Tres Marias", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Jubaia".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Jubaia".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Jucá".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Jucá".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Jucás".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Jucás".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Alto Paz", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Cohab", city_id: @c.id) 
@@ -2644,82 +2632,82 @@ Neighborhood.find_or_create_by(name: "Planalto", city_id: @c.id)
 Neighborhood.find_or_create_by(name: "Sagrada Familia", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Juritianha".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Juritianha".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Justiniano Serpa".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Justiniano Serpa".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Ladeira Grande".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Ladeira Grande".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Lagedo".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Lagedo".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Lages".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Lages".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Lagoa Barbada".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Lagoa Barbada".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Lagoa Cercada".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Lagoa Cercada".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Lagoa de Dentro".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Lagoa de Dentro".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Lagoa do Banana".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Lagoa do Banana".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Lagoa do Barro".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Lagoa do Barro".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Lagoa do Canema".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Lagoa do Canema".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Lagoa do Juvenal".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Lagoa do Juvenal".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Lagoa do Mato - Aracati".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Lagoa do Mato - Aracati".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Lagoa do Mato - Brejo Santo".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Lagoa do Mato - Brejo Santo".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Lagoa do Mato - Itatira".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Lagoa do Mato - Itatira".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Lagoa dos Milhomens".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Lagoa dos Milhomens".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Lagoa dos Monteiros".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Lagoa dos Monteiros".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Lagoa Funda - Beberibe".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Lagoa Funda - Beberibe".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Lagoa Grande - Russas".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Lagoa Grande - Russas".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Lagoa Seca".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Lagoa Seca".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Lagoa Vermelha".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Lagoa Vermelha".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Lagoinha - Paraipaba".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Lagoinha - Paraipaba".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Lagoinha - Quixeré".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Lagoinha - Quixeré".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Lambedouro".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Lambedouro".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Lameirão".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Lameirão".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Lapa".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Lapa".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Lavras da Mangabeira".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Lavras da Mangabeira".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Alem Rio", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Boa Vista", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
@@ -2730,16 +2718,16 @@ Neighborhood.find_or_create_by(name: "Rosario", city_id: @c.id)
 Neighborhood.find_or_create_by(name: "Vila Bancarios", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Lima Campos".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Lima Campos".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Alto Esperanca", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Limoeiro".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Limoeiro".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Limoeiro".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Limoeiro".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Limoeiro do Norte".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Limoeiro do Norte".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Antonio h Oliveira", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Boa Fe", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Bom Jesus", city_id: @c.id) 
@@ -2758,28 +2746,28 @@ Neighborhood.find_or_create_by(name: "Sitio Bonfim", city_id: @c.id)
 Neighborhood.find_or_create_by(name: "Sitio Socorro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Lisieux".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Lisieux".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Livramento".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Livramento".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Logradouro - Itaicaba".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Logradouro - Itaicaba".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Macaoca".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Macaoca".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Macaraú".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Macaraú".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Maceió".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Maceió".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Maceió - Fortim".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Maceió - Fortim".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Madalena".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Madalena".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Alto da Boa Vista", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Madalena Velha", city_id: @c.id) 
@@ -2789,29 +2777,29 @@ Neighborhood.find_or_create_by(name: "Sao Jose", city_id: @c.id)
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Urbana", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Major Simplício".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Major Simplício".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Majorlândia".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Majorlândia".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Malhadinha".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Malhadinha".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Mangabeira - Lavras da Mangueira".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Mangabeira - Lavras da Mangueira".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Mangabeiras".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Mangabeiras".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Mapuá".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Mapuá".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Maracajá".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Maracajá".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Maracanaú".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Maracanaú".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Alto Mangueira", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Antonio Justa", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Area Verde Coqueiral", city_id: @c.id) 
@@ -2875,7 +2863,7 @@ Neighborhood.find_or_create_by(name: "Vida Nova", city_id: @c.id)
 Neighborhood.find_or_create_by(name: "Vila Agroindustrial", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Maranguape".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Maranguape".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Cascatinha", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Cidade dos Funcionários", city_id: @c.id) 
@@ -2900,32 +2888,32 @@ Neighborhood.find_or_create_by(name: "Santos Dumont", city_id: @c.id)
 Neighborhood.find_or_create_by(name: "Tangueira", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Mararupá".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Mararupá".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Marco".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Marco".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Coqueirinho", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Coracao Jesus", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Marinheiros".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Marinheiros".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Marruás".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Marruás".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Martinópole".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Martinópole".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Cohab", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Joao Chagas", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Matadouro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Martinslândia".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Martinslândia".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Massapę".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Massapę".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Alto Boa Vista", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Bandeira Branca", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Cartucha", city_id: @c.id) 
@@ -2937,17 +2925,17 @@ Neighborhood.find_or_create_by(name: "Rodagem", city_id: @c.id)
 Neighborhood.find_or_create_by(name: "Santa Ursula", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Massapę dos Paes".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Massapę dos Paes".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Matőes".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Matőes".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Matriz - Bela Cruz".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Matriz - Bela Cruz".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Matriz - Ipueiras".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Matriz - Ipueiras".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Mauriti".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Mauriti".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Bela Vista", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Fazenda Umbuzeiro", city_id: @c.id) 
@@ -2955,27 +2943,27 @@ Neighborhood.find_or_create_by(name: "Popular", city_id: @c.id)
 Neighborhood.find_or_create_by(name: "Sitio Dantas", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Mel".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Mel".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Melancia de Baixo".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Melancia de Baixo".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Meruoca".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Meruoca".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Cohab", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Dom Expedito", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Rabo Calango", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Miguel Antônio".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Miguel Antônio".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Miguel Pereira".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Miguel Pereira".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Miguel Xavier".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Miguel Xavier".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Milagres".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Milagres".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Casa Propria", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Cohab", city_id: @c.id) 
@@ -2986,20 +2974,20 @@ Neighborhood.find_or_create_by(name: "Mario Teles", city_id: @c.id)
 Neighborhood.find_or_create_by(name: "Romeirao", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Milhã".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Milhã".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Cohab", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Sao Francisco", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Mineirolândia".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Mineirolândia".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Alto Esperanca", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Miragem".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Miragem".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Miraíma".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Miraíma".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Altos", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Campo Alegre", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Cemiterio", city_id: @c.id) 
@@ -3007,28 +2995,28 @@ Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id)
 Neighborhood.find_or_create_by(name: "Estacao", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Santa Isabel", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Mirambe".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Mirambe".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Missão Nova".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Missão Nova".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Missão Velha".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Missão Velha".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Boa Vista", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Casas Populares", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Casimiro v Farias", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Missi".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Missi".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Mocambo".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Mocambo".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Moitas".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Moitas".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Mombaça".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Mombaça".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Antonio Felinto", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Antonio Soares", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Beira Rio", city_id: @c.id) 
@@ -3042,7 +3030,7 @@ Neighborhood.find_or_create_by(name: "Vila Salete", city_id: @c.id)
 Neighborhood.find_or_create_by(name: "Vila Sao Jose", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Pacatuba".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Pacatuba".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Carnaubinha", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Forquilha", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Piripau", city_id: @c.id) 
@@ -3050,19 +3038,23 @@ Neighborhood.find_or_create_by(name: "Pracinha", city_id: @c.id)
 Neighborhood.find_or_create_by(name: "Quandu", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "São Bento", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "São José", city_id: @c.id) 
-Neighborhood.find_or_create_by(name: "São Luiz", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Senador Carlos Jereissati", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Alto São João", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Cajazeiras", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
-Neighborhood.find_or_create_by(name: "Monguba", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Pavuna", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Jereissati III", city_id: @c.id) 
+Neighborhood.find_or_create_by(name: "Beira Sol", city_id: @c.id) 
+Neighborhood.find_or_create_by(name: "Distrito Industrial", city_id: @c.id) 
+Neighborhood.find_or_create_by(name: "Loteamento Parque Quandu", city_id: @c.id) 
+Neighborhood.find_or_create_by(name: "Manoel Sátiro", city_id: @c.id) 
+Neighborhood.find_or_create_by(name: "Monguba", city_id: @c.id) 
+Neighborhood.find_or_create_by(name: "Quiobal", city_id: @c.id) 
+Neighborhood.find_or_create_by(name: "São Luís", city_id: @c.id) 
+Neighborhood.find_or_create_by(name: "Timbo", city_id: @c.id) 
+Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Trairi".mb_chars.upcase, state_id: state_id)
-Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
-
-@c = City.find_or_create_by(name: "Monsenhor Tabosa".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Monsenhor Tabosa".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Bela Vista", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Juca", city_id: @c.id) 
@@ -3070,23 +3062,23 @@ Neighborhood.find_or_create_by(name: "Padre Inacio", city_id: @c.id)
 Neighborhood.find_or_create_by(name: "Trezidela", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Monte Alegre - Barro".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Monte Alegre - Barro".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Monte Alegre I".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Monte Alegre I".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Monte Alverne".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Monte Alverne".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Monte Carmelo".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Monte Carmelo".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Monte Sion".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Monte Sion".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Montenebo".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Montenebo".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Morada Nova".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Morada Nova".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "44775", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Acude Velho", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Acudinho", city_id: @c.id) 
@@ -3104,24 +3096,24 @@ Neighborhood.find_or_create_by(name: "Sao Francisco", city_id: @c.id)
 Neighborhood.find_or_create_by(name: "Varzea", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Morada Nova".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Morada Nova".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Moraújo".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Moraújo".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Morrinho".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Morrinho".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Morrinhos".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Morrinhos".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Sao Jose", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Sao Luis", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Morrinhos Novos".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Morrinhos Novos".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Morro Branco  - Beberibe".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Morro Branco".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Cd Hidelmar Cordeiro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Cidade Baixa", city_id: @c.id) 
@@ -3130,65 +3122,61 @@ Neighborhood.find_or_create_by(name: "Morro Branco", city_id: @c.id)
 Neighborhood.find_or_create_by(name: "Tabuba", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Morro Pintado".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Morro Pintado".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Mucambo".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Mucambo".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Esperanca", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Mucambo - Guaraciaba do Norte".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Mucambo - Guaraciaba do Norte".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Mucunã".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Mucunã".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Mulungu".mb_chars.upcase, state_id: state_id)
-Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
-Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
-
-@c = City.find_or_create_by(name: "Mulungu - Piquet Carneiro".mb_chars.upcase, state_id: state_id)
-
-@c = City.find_or_create_by(name: "Mumbaba".mb_chars.upcase, state_id: state_id)
-Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
-
-@c = City.find_or_create_by(name: "Mundaú - Trairi".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Mulungu".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Mundaú - Uruburetama".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Mulungu - Piquet Carneiro".sem_acento.mb_chars.upcase, state_id: state_id)
+
+@c = City.find_or_create_by(name: "Mumbaba".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Mutambeiras".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Mundaú - Uruburetama".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Nenenlândia".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Mutambeiras".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Nova Betânia - Farias Brito".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Nenenlândia".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Nova Betânia - Nova Russas".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Nova Betânia - Farias Brito".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Nova Fátima".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Nova Betânia - Nova Russas".sem_acento.mb_chars.upcase, state_id: state_id)
+Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
+
+@c = City.find_or_create_by(name: "Nova Fátima".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Nova Floresta".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Nova Floresta".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Vila Alcantara", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Nova Olinda".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Nova Olinda".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Casas Populares", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Cruzeiro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Vila Alta", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Nova Russas".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Nova Russas".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Boa Vista", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Cohab", city_id: @c.id) 
@@ -3203,36 +3191,36 @@ Neighborhood.find_or_create_by(name: "Tamboril", city_id: @c.id)
 Neighborhood.find_or_create_by(name: "Timbauba", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Nova Veneza".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Nova Veneza".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Novo Assis".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Novo Assis".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Novo Horizonte".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Novo Horizonte".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Novo Oriente".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Novo Oriente".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Tigre Norte", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Tigre Sul Norte", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Vila Feliz", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Ocara".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Ocara".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Olho D'Água".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Olho D'Água".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Olho D'Água da Bica".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Olho D'Água da Bica".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Olho D'Agua do Bezerril".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Olho D'Agua do Bezerril".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Oliveiras".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Oliveiras".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Orós".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Orós".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Batista", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Cohab", city_id: @c.id) 
@@ -3241,12 +3229,12 @@ Neighborhood.find_or_create_by(name: "Mutirão", city_id: @c.id)
 Neighborhood.find_or_create_by(name: "Mutirao Bom Jesus", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Ouro".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Ouro".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Outeiro".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Outeiro".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Pacajús".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Pacajús".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Aldeia", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Alto Boa Vista", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Bangue", city_id: @c.id) 
@@ -3263,25 +3251,7 @@ Neighborhood.find_or_create_by(name: "Lagoa Seca", city_id: @c.id)
 Neighborhood.find_or_create_by(name: "Maraponga", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Pacatuba".mb_chars.upcase, state_id: state_id)
-Neighborhood.find_or_create_by(name: "Alto Sao Joao", city_id: @c.id) 
-Neighborhood.find_or_create_by(name: "Beira Sol", city_id: @c.id) 
-Neighborhood.find_or_create_by(name: "Carnaubinha", city_id: @c.id) 
-Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
-Neighborhood.find_or_create_by(name: "Distrito Industrial", city_id: @c.id) 
-Neighborhood.find_or_create_by(name: "Loteamento Parque Quandu", city_id: @c.id) 
-Neighborhood.find_or_create_by(name: "Manoel Sátiro", city_id: @c.id) 
-Neighborhood.find_or_create_by(name: "Monguba", city_id: @c.id) 
-Neighborhood.find_or_create_by(name: "Pavuna", city_id: @c.id) 
-Neighborhood.find_or_create_by(name: "Piripau", city_id: @c.id) 
-Neighborhood.find_or_create_by(name: "Quiobal", city_id: @c.id) 
-Neighborhood.find_or_create_by(name: "Sao Bento", city_id: @c.id) 
-Neighborhood.find_or_create_by(name: "Sao Jose", city_id: @c.id) 
-Neighborhood.find_or_create_by(name: "São Luís", city_id: @c.id) 
-Neighborhood.find_or_create_by(name: "Timbo", city_id: @c.id) 
-Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
-
-@c = City.find_or_create_by(name: "Pacoti".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Pacoti".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Botija", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Forquilha", city_id: @c.id) 
@@ -3292,60 +3262,60 @@ Neighborhood.find_or_create_by(name: "Pacoti", city_id: @c.id)
 Neighborhood.find_or_create_by(name: "Planalto", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Pacujá".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Pacujá".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Padre Cícero - Juazeiro  do Norte".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Padre Cícero - Juazeiro  do Norte".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Padre Cícero - Milagres".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Padre Cícero - Milagres".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Padre Linhares".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Padre Linhares".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Padre Vieira".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Padre Vieira".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Pai João".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Pai João".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Pajeú".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Pajeú".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Pajuçara".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Pajuçara".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Palestina - Mauriti".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Palestina - Mauriti".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Dnocs", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Palestina - Orós".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Palestina - Orós".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Palestina do Norte".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Palestina do Norte".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Palhano".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Palhano".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Cj Palhano Cohab", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Palmácia".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Palmácia".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Clube Vinte", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Timbauba", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Vale Palmeiras", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Palmatória".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Palmatória".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Palmeira".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Palmeira".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Panacuí".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Panacuí".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Paracuru".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Paracuru".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Aldeota", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Barra", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Boi Morto", city_id: @c.id) 
@@ -3370,25 +3340,25 @@ Neighborhood.find_or_create_by(name: "Vila Sao Jose", city_id: @c.id)
 Neighborhood.find_or_create_by(name: "Vista Verde", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Parada".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Parada".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Paraguai - Cruz".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Paraguai - Cruz".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Paraipaba".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Paraipaba".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Beira Mar", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Parquelândia ", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Setor c Dois", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Parajuru".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Parajuru".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Coacu", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Praia Gamboa", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Parambu".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Parambu".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Antonio j Noronha", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Beleza", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Brasilia", city_id: @c.id) 
@@ -3396,87 +3366,87 @@ Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id)
 Neighborhood.find_or_create_by(name: "Vila Nova", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Paramoti".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Paramoti".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Alto Bela Vista", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Cohab", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Vicente Farias", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Parapuí".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Parapuí".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Parazinho".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Parazinho".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Paripueira".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Paripueira".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Pascoal".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Pascoal".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Pascoalzinho".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Pascoalzinho".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Passagem da Vaz".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Passagem da Vaz".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Patacas".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Patacas".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Distrito Aracas", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Patos".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Patos".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Patos - Morada Nova".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Patos - Morada Nova".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Patos - Sobral".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Patos - Sobral".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Patos dos Liberatos".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Patos dos Liberatos".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Patriarca".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Patriarca".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Pau Branco".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Pau Branco".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Pavuna".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Pavuna".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Fazenda Laco Ouro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Pecém".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Pecém".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Pecem", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Pedra Branca".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Pedra Branca".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Aeroporto", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Matadouro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Santa Maria", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Pedra de Fogo".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Pedra de Fogo".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Pedra Redonda".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Pedra Redonda".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Pedras - Morada Nova".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Pedras - Morada Nova".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Pedras - Russas".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Pedras - Russas".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Penaforte".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Penaforte".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Cohab", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Penedo".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Penedo".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Pentecoste".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Pentecoste".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Acampamento", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Cohab", city_id: @c.id) 
@@ -3487,76 +3457,76 @@ Neighborhood.find_or_create_by(name: "Santa Ines", city_id: @c.id)
 Neighborhood.find_or_create_by(name: "Vila Nova", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Pereiro".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Pereiro".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Cj Jaguaribe", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Cohab", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Popular", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Pernambuquinho".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Pernambuquinho".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Pesqueira".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Pesqueira".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Picos".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Picos".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Pindoguaba".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Pindoguaba".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Pindoretama".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Pindoretama".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Caponga Funda", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Sitio Baltazar", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Pio X".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Pio X".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Piquet Carneiro".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Piquet Carneiro".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Piquezinho", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Piranji".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Piranji".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Pirapora".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Pirapora".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Pires Ferreira".mb_chars.upcase, state_id: state_id)
-Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
-Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
-
-@c = City.find_or_create_by(name: "Pitombeiras - Cascavél".mb_chars.upcase, state_id: state_id)
-Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
-
-@c = City.find_or_create_by(name: "Placa José Pereira".mb_chars.upcase, state_id: state_id)
-Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
-
-@c = City.find_or_create_by(name: "Poço da Onça".mb_chars.upcase, state_id: state_id)
-
-@c = City.find_or_create_by(name: "Poço Doce - Paracuru".mb_chars.upcase, state_id: state_id)
-Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
-
-@c = City.find_or_create_by(name: "Podimirim".mb_chars.upcase, state_id: state_id)
-Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
-
-@c = City.find_or_create_by(name: "Ponta da Serra".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Pires Ferreira".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Poranga".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Pitombeiras - Cascavél".sem_acento.mb_chars.upcase, state_id: state_id)
+Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
+
+@c = City.find_or_create_by(name: "Placa José Pereira".sem_acento.mb_chars.upcase, state_id: state_id)
+Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
+
+@c = City.find_or_create_by(name: "Poço da Onça".sem_acento.mb_chars.upcase, state_id: state_id)
+
+@c = City.find_or_create_by(name: "Poço Doce - Paracuru".sem_acento.mb_chars.upcase, state_id: state_id)
+Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
+
+@c = City.find_or_create_by(name: "Podimirim".sem_acento.mb_chars.upcase, state_id: state_id)
+Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
+
+@c = City.find_or_create_by(name: "Ponta da Serra".sem_acento.mb_chars.upcase, state_id: state_id)
+Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
+Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
+
+@c = City.find_or_create_by(name: "Poranga".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Betania", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Jerico", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Porteiras".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Porteiras".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Casas Populares", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Santa Tereza", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Porto das Dunas".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Porto das Dunas".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "1ª Etapa", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "2ª Etapa", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "3ª Etapa", city_id: @c.id) 
@@ -3566,74 +3536,74 @@ Neighborhood.find_or_create_by(name: "Mirante Beach Park", city_id: @c.id)
 Neighborhood.find_or_create_by(name: "Porto Dunas", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Pousada Aguas", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Porto dos Barcos".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Porto dos Barcos".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Potengi".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Potengi".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Cohab", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Poti".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Poti".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Potiretama".mb_chars.upcase, state_id: state_id)
-Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
-Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
-
-@c = City.find_or_create_by(name: "Praia da Baleia".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Potiretama".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Praia das Fontes".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Praia da Baleia".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Prainha".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Praia das Fontes".sem_acento.mb_chars.upcase, state_id: state_id)
+Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
+Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
+
+@c = City.find_or_create_by(name: "Prainha".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Alto Prainha", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Japao", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Prainha", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Prainha do Canto Verde".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Prainha do Canto Verde".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Prata".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Prata".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Pratiús".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Pratiús".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Preá".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Preá".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Purão".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Purão".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Quatiguaba".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Quatiguaba".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Quatro Bocas".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Quatro Bocas".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Quincoe".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Quincoe".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Quincunca".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Quincunca".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Quitaius".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Quitaius".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Quitéria".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Quitéria".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Quiterianópolis".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Quiterianópolis".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Alto Brilhante", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Cohab", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Quixaba".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Quixaba".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Quixadá".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Quixadá".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Abraao Baquit", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Alto Sao Francisco", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Baseera", city_id: @c.id) 
@@ -3657,15 +3627,15 @@ Neighborhood.find_or_create_by(name: "Renascer", city_id: @c.id)
 Neighborhood.find_or_create_by(name: "Sao Joao", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Quixariú".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Quixariú".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Quixelô".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Quixelô".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Cohab", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Quixeramobim".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Quixeramobim".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Alto Maravilha", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Antonio Sisnando", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Argentina", city_id: @c.id) 
@@ -3674,7 +3644,7 @@ Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id)
 Neighborhood.find_or_create_by(name: "Cohab", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Coronel Aurelio Camara", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Duque Caxias", city_id: @c.id) 
-Neighborhood.find_or_create_by(name: "Esperanca", city_id: @c.id) 
+Neighborhood.find_or_create_by(name: "Conjunto Esperanca", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Jaime Lopes", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Jose a Machado Dr", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Matadouro", city_id: @c.id) 
@@ -3688,31 +3658,31 @@ Neighborhood.find_or_create_by(name: "Vila s Paulo", city_id: @c.id)
 Neighborhood.find_or_create_by(name: "Vila Uniao", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Quixeré".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Quixeré".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Cibrazem", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Rafael Arruda".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Rafael Arruda".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Realejo".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Realejo".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Recreio".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Recreio".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Redenção".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Redenção".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Antonio Bonfim", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Boa Fe", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Cto Comunitario", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Redonda".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Redonda".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Reriutaba".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Reriutaba".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Acude Mato", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Carao", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
@@ -3721,26 +3691,26 @@ Neighborhood.find_or_create_by(name: "Rampa", city_id: @c.id)
 Neighborhood.find_or_create_by(name: "Santa Cruz Velha", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Retiro - Chaval".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Retiro - Chaval".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Riachão do Banabuiú".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Riachão do Banabuiú".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Riachão do Norte".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Riachão do Norte".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Riacho Grande".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Riacho Grande".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Riacho Verde".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Riacho Verde".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Roldão".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Roldão".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Rosário".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Rosário".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Russas".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Russas".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Abdon Valerio", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Alto Bela Vista", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Andre Moreira", city_id: @c.id) 
@@ -3761,42 +3731,42 @@ Neighborhood.find_or_create_by(name: "Vazea Alegre", city_id: @c.id)
 Neighborhood.find_or_create_by(name: "Vila União", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "S Jerônimo".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "S Jerônimo".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Saboeiro".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Saboeiro".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Salão".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Salão".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Salgadinho".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Salgadinho".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Salitre".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Salitre".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Salitre - Canindé".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Salitre - Canindé".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Sangradouro".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Sangradouro".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Santa Bárbara".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Santa Bárbara".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Santa Fé - Crato".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Santa Fé - Crato".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Santa Felícia".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Santa Felícia".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Santa Isabel".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Santa Isabel".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Santa Luzia  - Jaguaruana".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Santa Luzia  - Jaguaruana".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Santa Maria - Novo Horizonte".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Santa Maria - Novo Horizonte".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Santa Quitéria".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Santa Quitéria".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Boa Vida", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Bota Fogo", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
@@ -3810,25 +3780,25 @@ Neighborhood.find_or_create_by(name: "Piracicaba", city_id: @c.id)
 Neighborhood.find_or_create_by(name: "Primavera", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Santa Rita".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Santa Rita".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Santa Rosa".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Santa Rosa".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Santa Tereza - Aracati".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Santa Tereza - Aracati".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Santa Tereza - Croatá".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Santa Tereza - Croatá".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Santa Tereza - Tauá".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Santa Tereza - Tauá".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Santa Terezinha".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Santa Terezinha".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Santana - Monsenhor Tabosa".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Santana - Monsenhor Tabosa".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Santana do Acaraú".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Santana do Acaraú".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "d Luiza Tavora", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Gerardo Arcanjo", city_id: @c.id) 
@@ -3838,27 +3808,27 @@ Neighborhood.find_or_create_by(name: "Pedregal", city_id: @c.id)
 Neighborhood.find_or_create_by(name: "Retiro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Santana do Cariri".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Santana do Cariri".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Casas Populares", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Santarém".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Santarém".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Santo Antônio - Acopiara".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Santo Antônio - Acopiara".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Santo Antônio - Ararendá".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Santo Antônio - Ararendá".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Santo Antônio - Barro".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Santo Antônio - Barro".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Santo Antônio - Crateus".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Santo Antônio - Crateus".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Santo Antônio do Aracatiaçu".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Santo Antônio do Aracatiaçu".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "São Benedito".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "São Benedito".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Cachoeira", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Castelo", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
@@ -3872,20 +3842,20 @@ Neighborhood.find_or_create_by(name: "Toca do Quati", city_id: @c.id)
 Neighborhood.find_or_create_by(name: "Vila Franco", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "São Domingos".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "São Domingos".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "São Félix".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "São Félix".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "São Francisco Jordão".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "São Francisco Jordão".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "São Gonçalo - Catarina".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "São Gonçalo - Catarina".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "São Gonçalo - Juazeiro do Norte".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "São Gonçalo - Juazeiro do Norte".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "São Gonçalo do Amarante".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "São Gonçalo do Amarante".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Alto Vinten", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Arapixi", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Brasilia", city_id: @c.id) 
@@ -3896,95 +3866,95 @@ Neighborhood.find_or_create_by(name: "Palestina", city_id: @c.id)
 Neighborhood.find_or_create_by(name: "São Gonçalo", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "São João".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "São João".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "São João de Deus".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "São João de Deus".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "São João do Amanari".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "São João do Amanari".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "São João do Jaguaribe".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "São João do Jaguaribe".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Bela Vista", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "São Joaquim".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "São Joaquim".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "São Joaquim do Salgado".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "São Joaquim do Salgado".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "São José - Jaguaruana".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "São José - Jaguaruana".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "São José - Palhano".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "São José - Palhano".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "São José - Saboeiro".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "São José - Saboeiro".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "São José de Solonópole".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "São José de Solonópole".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "São José do Torto".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "São José do Torto".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "São Luís do Curu".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "São Luís do Curu".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Salgado", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Suate", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Tancredo Neves", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "São Miguel - Mauriti".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "São Miguel - Mauriti".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "São Miguel - Quixeramobim".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "São Miguel - Quixeramobim".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "São Nicolau".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "São Nicolau".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "São Paulo".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "São Paulo".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "São Pedro".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "São Pedro".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "São Raimundo - Limoeiro do Norte".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "São Raimundo - Limoeiro do Norte".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "São Raimundo - Novo Oriente".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "São Raimundo - Novo Oriente".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "São Roque".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "São Roque".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "São Sebastião - Baturité".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "São Sebastião - Baturité".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "São Sebastião - Brejo Santo".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "São Sebastião - Brejo Santo".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "São Sebastião - Cariús".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "São Sebastião - Cariús".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "São Vicente - Ico".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "São Vicente - Ico".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Sapo".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Sapo".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Sapupara".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Sapupara".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Sebastião de Abreu".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Sebastião de Abreu".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Senador Pompeu".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Senador Pompeu".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Alto Bode", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Alto Cruzeiro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Brasilia", city_id: @c.id) 
@@ -3996,71 +3966,71 @@ Neighborhood.find_or_create_by(name: "Patu", city_id: @c.id)
 Neighborhood.find_or_create_by(name: "Pavaozinho", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Senador Sá".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Senador Sá".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Sereno de Baixo".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Sereno de Baixo".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Sereno de Cima".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Sereno de Cima".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Serragem".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Serragem".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Serrinha".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Serrinha".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Serrota".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Serrota".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Serrote - Iguatu".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Serrote - Iguatu".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Simão".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Simão".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Sítio Alegre".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Sítio Alegre".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Sítio Bom Sucesso".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Sítio Bom Sucesso".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Sítio Canto I".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Sítio Canto I".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Sítio Estrela".mb_chars.upcase, state_id: state_id)
-Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
-Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
-
-@c = City.find_or_create_by(name: "Sítio Farias".mb_chars.upcase, state_id: state_id)
-
-@c = City.find_or_create_by(name: "Sítio Gavião".mb_chars.upcase, state_id: state_id)
-
-@c = City.find_or_create_by(name: "Sítio Jardim".mb_chars.upcase, state_id: state_id)
-
-@c = City.find_or_create_by(name: "Sítio Lagoa".mb_chars.upcase, state_id: state_id)
-Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
-
-@c = City.find_or_create_by(name: "Sítio Logradouro".mb_chars.upcase, state_id: state_id)
-Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
-
-@c = City.find_or_create_by(name: "Sítio São Francisco".mb_chars.upcase, state_id: state_id)
-
-@c = City.find_or_create_by(name: "Sítio Silva".mb_chars.upcase, state_id: state_id)
-
-@c = City.find_or_create_by(name: "Sítio Triunfo".mb_chars.upcase, state_id: state_id)
-Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
-
-@c = City.find_or_create_by(name: "Sítios Novos".mb_chars.upcase, state_id: state_id)
-Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
-
-@c = City.find_or_create_by(name: "Siupé".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Sítio Estrela".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Sobral".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Sítio Farias".sem_acento.mb_chars.upcase, state_id: state_id)
+
+@c = City.find_or_create_by(name: "Sítio Gavião".sem_acento.mb_chars.upcase, state_id: state_id)
+
+@c = City.find_or_create_by(name: "Sítio Jardim".sem_acento.mb_chars.upcase, state_id: state_id)
+
+@c = City.find_or_create_by(name: "Sítio Lagoa".sem_acento.mb_chars.upcase, state_id: state_id)
+Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
+
+@c = City.find_or_create_by(name: "Sítio Logradouro".sem_acento.mb_chars.upcase, state_id: state_id)
+Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
+
+@c = City.find_or_create_by(name: "Sítio São Francisco".sem_acento.mb_chars.upcase, state_id: state_id)
+
+@c = City.find_or_create_by(name: "Sítio Silva".sem_acento.mb_chars.upcase, state_id: state_id)
+
+@c = City.find_or_create_by(name: "Sítio Triunfo".sem_acento.mb_chars.upcase, state_id: state_id)
+Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
+
+@c = City.find_or_create_by(name: "Sítios Novos".sem_acento.mb_chars.upcase, state_id: state_id)
+Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
+
+@c = City.find_or_create_by(name: "Siupé".sem_acento.mb_chars.upcase, state_id: state_id)
+Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
+Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
+
+@c = City.find_or_create_by(name: "Sobral".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Alto Brasilia", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Alto Cristo", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Barroso", city_id: @c.id) 
@@ -4107,7 +4077,7 @@ Neighborhood.find_or_create_by(name: "Vila Recanto", city_id: @c.id)
 Neighborhood.find_or_create_by(name: "Vila Uniao", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Solonópole".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Solonópole".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Alto Vistoso", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Barra Nova", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Br 226", city_id: @c.id) 
@@ -4118,38 +4088,38 @@ Neighborhood.find_or_create_by(name: "Monte Castelo", city_id: @c.id)
 Neighborhood.find_or_create_by(name: "Semeao Machado", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Suassurana".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Suassurana".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Sucatinga".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Sucatinga".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Sucesso".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Sucesso".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Sucupira".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Sucupira".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Sussuanha".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Sussuanha".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Susto".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Susto".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Tabainha".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Tabainha".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Taboca".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Taboca".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Tabuba".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Tabuba".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Barra Sol", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Cumbuco", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Parazinho", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Tabuba", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Tabuleiro".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Tabuleiro".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Tabuleiro do Norte".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Tabuleiro do Norte".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Bom Futuro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Pio Afonso Chaves", city_id: @c.id) 
@@ -4158,7 +4128,7 @@ Neighborhood.find_or_create_by(name: "Pres c Silva", city_id: @c.id)
 Neighborhood.find_or_create_by(name: "Sao Francisco", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Taíba".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Taíba".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Barra Mar", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Loteamento Enseada Taíba", city_id: @c.id) 
@@ -4166,7 +4136,7 @@ Neighborhood.find_or_create_by(name: "Maceió", city_id: @c.id)
 Neighborhood.find_or_create_by(name: "Nova Taiba", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Tamboril".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Tamboril".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Cohab", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Monte Azul", city_id: @c.id) 
@@ -4177,32 +4147,32 @@ Neighborhood.find_or_create_by(name: "Pedrinha", city_id: @c.id)
 Neighborhood.find_or_create_by(name: "Sao Pedro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Tangente".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Tangente".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Tanques".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Tanques".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Tapera".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Tapera".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Portal Praia", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Taperuaba".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Taperuaba".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Alto Bela Vista", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Vassouras", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Tapúio - Aquiraz".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Tapúio - Aquiraz".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Loteamento Paraíso Eusébio", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Tapúio - Cariré".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Tapúio - Cariré".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Tarrafas".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Tarrafas".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Tauá".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Tauá".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Aldeota", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Alto Brilhante", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Alto Cadeia", city_id: @c.id) 
@@ -4223,14 +4193,14 @@ Neighborhood.find_or_create_by(name: "Sao Geraldo", city_id: @c.id)
 Neighborhood.find_or_create_by(name: "Tauazinho", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Tejuçuoca".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Tejuçuoca".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Telha".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Telha".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Tianguá".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Tianguá".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Aeroporto", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Br", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Ceasa", city_id: @c.id) 
@@ -4247,71 +4217,72 @@ Neighborhood.find_or_create_by(name: "Rodoviaria", city_id: @c.id)
 Neighborhood.find_or_create_by(name: "Santo Antonio", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Tijucussu I".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Tijucussu I".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Tijucussu II".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Tijucussu II".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Timbaúba".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Timbaúba".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Timbaúba dos Marinheiros".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Timbaúba dos Marinheiros".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Timonha".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Timonha".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Tomé".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Tomé".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Tope".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Tope".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Torrőes".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Torrőes".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Tourada".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Tourada".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Trairi".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Trairi".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
-Neighborhood.find_or_create_by(name: "Parque e n Trairi", city_id: @c.id) 
+Neighborhood.find_or_create_by(name: "Canaan", city_id: @c.id) 
+Neighborhood.find_or_create_by(name: "Córrego Fundo", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Pici", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Serrinha", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Tranqueiras".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Tranqueiras".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Trapiá - Forquilha".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Trapiá - Forquilha".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Trapiá - Santa Quitéria".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Trapiá - Santa Quitéria".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Tręs Bodegas".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Tręs Bodegas".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Triângulo".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Triângulo".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Triângulo do Marco".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Triângulo do Marco".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Trussu".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Trussu".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Tucum".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Tucum".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Tucuns".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Tucuns".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Tuína".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Tuína".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Tururu".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Tururu".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Alto Camelo", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Alto Feitosas", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Estacao", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Ubajara".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Ubajara".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Bela Vista", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Monte Castelo", city_id: @c.id) 
@@ -4319,45 +4290,42 @@ Neighborhood.find_or_create_by(name: "Sao Sebastiao", city_id: @c.id)
 Neighborhood.find_or_create_by(name: "Vila Nova", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Ubaúna".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Ubaúna".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Uiraponga".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Uiraponga".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Umari".mb_chars.upcase, state_id: state_id)
-Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
-Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
-
-@c = City.find_or_create_by(name: "Umari".mb_chars.upcase, state_id: state_id)
-Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
-
-@c = City.find_or_create_by(name: "Umarituba".mb_chars.upcase, state_id: state_id)
-
-@c = City.find_or_create_by(name: "Umarizeiras".mb_chars.upcase, state_id: state_id)
-Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
-
-@c = City.find_or_create_by(name: "Umburanas".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Umari".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Umirim".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Umarituba".sem_acento.mb_chars.upcase, state_id: state_id)
+
+@c = City.find_or_create_by(name: "Umarizeiras".sem_acento.mb_chars.upcase, state_id: state_id)
+Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
+
+@c = City.find_or_create_by(name: "Umburanas".sem_acento.mb_chars.upcase, state_id: state_id)
+Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
+Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
+
+@c = City.find_or_create_by(name: "Umirim".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Cruzeiro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Tancredo Neves", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "União".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "União".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Urua II".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Urua II".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Uruaú".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Uruaú".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Marambaia", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Uruburetama".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Uruburetama".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Alto Colina", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Alto Sao Joao", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Bela Vista", city_id: @c.id) 
@@ -4365,20 +4333,20 @@ Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id)
 Neighborhood.find_or_create_by(name: "Coracao Jesus", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Urucara".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Urucara".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Uruoca".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Uruoca".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Alecrim", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Brasilia", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Roberto Dourado", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Vila Nova", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Uruquę".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Uruquę".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Varjota".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Varjota".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Ararinha", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Caixa D'agua", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
@@ -4387,7 +4355,7 @@ Neighborhood.find_or_create_by(name: "Emprestimo", city_id: @c.id)
 Neighborhood.find_or_create_by(name: "Pedreiras", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Várzea Alegre".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Várzea Alegre".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Agrovila", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Alto Tenente", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Baixo Exu", city_id: @c.id) 
@@ -4404,21 +4372,21 @@ Neighborhood.find_or_create_by(name: "Varjota", city_id: @c.id)
 Neighborhood.find_or_create_by(name: "Zezinho Costa", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Várzea da Conceição".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Várzea da Conceição".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Várzea da Volta".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Várzea da Volta".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Várzea do Giló".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Várzea do Giló".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Várzea Redonda".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Várzea Redonda".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Vazantes".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Vazantes".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Viçosa do Ceará".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Viçosa do Ceará".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Fatima", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Iran", city_id: @c.id) 
@@ -4426,32 +4394,32 @@ Neighborhood.find_or_create_by(name: "Matadouro", city_id: @c.id)
 Neighborhood.find_or_create_by(name: "Santa Cecilia", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Vila Cachoeirinha".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Vila Cachoeirinha".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Vila Carnaúba de Baixo".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Vila Carnaúba de Baixo".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Vila do Félix".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Vila do Félix".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Vila Gadelha".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Vila Gadelha".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Vila Joaquim Moreira".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Vila Joaquim Moreira".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Vila Massapę".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Vila Massapę".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Vila Nova".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Vila Nova".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Vila Progresso".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Vila Progresso".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 Neighborhood.find_or_create_by(name: "Zona Rural", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Vila São Pedro".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Vila São Pedro".sem_acento.mb_chars.upcase, state_id: state_id)
 Neighborhood.find_or_create_by(name: "Centro", city_id: @c.id) 
 
-@c = City.find_or_create_by(name: "Violete".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Violete".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Volta do Rio".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Volta do Rio".sem_acento.mb_chars.upcase, state_id: state_id)
 
-@c = City.find_or_create_by(name: "Volta do Rio - Acarau".mb_chars.upcase, state_id: state_id)
+@c = City.find_or_create_by(name: "Volta do Rio - Acarau".sem_acento.mb_chars.upcase, state_id: state_id)

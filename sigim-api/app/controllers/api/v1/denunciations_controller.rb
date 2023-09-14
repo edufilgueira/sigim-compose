@@ -28,16 +28,17 @@ class Api::V1::DenunciationsController < Api::V1::ApiController
   ]
 
   ASSOCIATIONS = [
-    'INNER JOIN people victim ON denunciations.victim_id = victim.id',
-    'LEFT JOIN people aggressor ON denunciations.aggressor_id = aggressor.id'
+    'LEFT JOIN denunciation_victims ON denunciation_victims.denunciation_id = denunciations.id',
+    'INNER JOIN people victim ON victim.id = denunciation_victims.person_id',
+    'LEFT JOIN denunciation_agressors aggressor ON aggressor.denunciation_id = denunciations.id',
+    'LEFT JOIN denunciation_crime_types ON denunciation_crime_types.denunciation_id = denunciations.id',
+    'INNER JOIN crime_types crime_types ON crime_types.id = denunciation_crime_types.crime_type_id',
   ]
 
   FILTERED_COLUMNS = %i[
     crime_type_id
     violence_type_id
     violence_motivation_id
-    victim_id
-    aggressor_id
     occurrence_neighborhood_id
     source_system_id
   ]
@@ -45,6 +46,19 @@ class Api::V1::DenunciationsController < Api::V1::ApiController
   FILTERED_EXPRESSION = [
     number: "LOWER(denunciations.number) LIKE LOWER('%?%')",
     victim_name: "LOWER(victim.name) LIKE LOWER('%?%')",
-    aggressor_name: "LOWER(aggressor.name) LIKE LOWER('%?%')"
+    aggressor_name: "LOWER(aggressor.name) LIKE LOWER('%?%')",
+    crime_type_name: "LOWER(crime_types.name) LIKE LOWER('%?%')"
   ]
+
+
+  def index
+    if current_api_user.can?(ability_symbol('index'))
+      instance_variable_set("@#{resources_name}", resources.distinct)
+      render_action("index")
+      
+      return
+    end
+    denied_access
+  end
+  
 end

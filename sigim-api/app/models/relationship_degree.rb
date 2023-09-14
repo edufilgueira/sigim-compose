@@ -1,4 +1,5 @@
 class RelationshipDegree < ApplicationRecord
+	include ::Fonetical
 
 	# Associations
 	

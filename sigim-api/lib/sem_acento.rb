@@ -31,9 +31,7 @@ class SemAcento
         str = str.gsub(s, rep)
       end
     end
-    str = str.gsub(/[^a-zA-Z0-9\. ]/,"")
     str = str.gsub(/[ ]+/," ")
-    #str = str.downcase
     str
   end
 end

@@ -1,4 +1,5 @@
 class ViolenceMotivation < ApplicationRecord
+	include ::Fonetical
 
 	# Associations
 

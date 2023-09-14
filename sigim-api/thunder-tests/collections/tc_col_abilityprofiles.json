@@ -1,0 +1,164 @@
+{
+    "_id": "db622834-24cc-4462-a707-f01b271056c6",
+    "colName": "AbilityProfiles",
+    "created": "2022-11-03T18:21:21.233Z",
+    "sortNum": 30000,
+    "folders": [],
+    "requests": [
+        {
+            "_id": "6b8f5764-27bd-41e1-90d9-0e5c08ef93ce",
+            "colId": "db622834-24cc-4462-a707-f01b271056c6",
+            "containerId": "",
+            "name": "Index",
+            "url": "{{servidor}}/ability_profiles?name=ad",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2022-11-03T18:21:21.260Z",
+            "modified": "2022-12-05T15:33:50.446Z",
+            "headers": [
+                {
+                    "name": "access-token",
+                    "value": "{{access_token}}"
+                },
+                {
+                    "name": "uid",
+                    "value": "{{email}}"
+                },
+                {
+                    "name": "client",
+                    "value": "{{client}}"
+                }
+            ],
+            "params": [
+                {
+                    "name": "name",
+                    "value": "ad",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "9e092427-5297-45f9-bce0-da0089d94bf4",
+            "colId": "db622834-24cc-4462-a707-f01b271056c6",
+            "containerId": "",
+            "name": "Show",
+            "url": "{{servidor}}/ability_profiles/1",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2022-11-03T18:21:21.261Z",
+            "modified": "2022-11-03T18:21:28.638Z",
+            "headers": [
+                {
+                    "name": "access-token",
+                    "value": "{{access_token}}"
+                },
+                {
+                    "name": "uid",
+                    "value": "{{email}}"
+                },
+                {
+                    "name": "client",
+                    "value": "{{client}}"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "93e63899-85ee-4698-b0f7-580c6149e3df",
+            "colId": "db622834-24cc-4462-a707-f01b271056c6",
+            "containerId": "",
+            "name": "Create",
+            "url": "{{servidor}}/ability_profiles",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2022-11-03T18:21:21.262Z",
+            "modified": "2022-11-03T18:21:21.262Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "access-token",
+                    "value": "{{access_token}}"
+                },
+                {
+                    "name": "uid",
+                    "value": "{{email}}"
+                },
+                {
+                    "name": "client",
+                    "value": "{{client}}"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n    \"description\": \"Novo Acesso do Coordenador novo\"\r\n}"
+            }
+        },
+        {
+            "_id": "1a25a728-c64d-42b7-af01-d7fa714419a9",
+            "colId": "db622834-24cc-4462-a707-f01b271056c6",
+            "containerId": "",
+            "name": "Update",
+            "url": "{{servidor}}/ability_profiles/1",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2022-11-03T18:21:21.263Z",
+            "modified": "2022-11-03T18:21:21.263Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "access-token",
+                    "value": "{{access_token}}"
+                },
+                {
+                    "name": "uid",
+                    "value": "{{email}}"
+                },
+                {
+                    "name": "client",
+                    "value": "{{client}}"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n    \"description\": \"Coordenador\"\r\n}"
+            }
+        },
+        {
+            "_id": "c3600ebe-59be-450c-870f-cb82e572bf06",
+            "colId": "db622834-24cc-4462-a707-f01b271056c6",
+            "containerId": "",
+            "name": "Delete",
+            "url": "{{servidor}}/ability_profiles/1",
+            "method": "DELETE",
+            "sortNum": 50000,
+            "created": "2022-11-03T18:21:21.264Z",
+            "modified": "2022-11-03T18:21:21.264Z",
+            "headers": [
+                {
+                    "name": "access-token",
+                    "value": "{{access_token}}"
+                },
+                {
+                    "name": "uid",
+                    "value": "{{email}}"
+                },
+                {
+                    "name": "client",
+                    "value": "{{client}}"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n    \"title\": \"hello\",\r\n    \"body\": \"Word\"\r\n}"
+            }
+        }
+    ]
+}

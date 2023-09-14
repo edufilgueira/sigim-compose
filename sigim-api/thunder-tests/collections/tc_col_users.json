@@ -1,0 +1,47 @@
+{
+    "_id": "9330b9b5-c698-440a-83b4-c63e31778721",
+    "colName": "Users",
+    "created": "2022-11-02T17:21:02.413Z",
+    "sortNum": 10000,
+    "folders": [],
+    "requests": [
+        {
+            "_id": "ee3e0fc4-2bd8-4535-ade2-a4b68a73c0f0",
+            "colId": "9330b9b5-c698-440a-83b4-c63e31778721",
+            "containerId": "",
+            "name": "Create",
+            "url": "{{servidor}}/auth",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2022-11-02T17:21:21.112Z",
+            "modified": "2022-11-17T17:29:51.304Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n   \"ability_profile_id\" : 1,\n    \"active\" : true,\n    \"cpf\" : \"111.111.111-12\",\n    \"email\" : \"{{email}}\",\n    \"name\" : \"Admin1\",\n    \"password\" :  \"{{password}}\",\n    \"password_confirmation\" : \"{{password}}\",\n    \"phone_number\" : \"(85) 98585.8585\",\n    \"confirmed_at\": \"{{confirmed_at}}\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "ccc50aa0-00b6-48b7-92bc-b1ca1c620a02",
+            "colId": "9330b9b5-c698-440a-83b4-c63e31778721",
+            "containerId": "",
+            "name": "Can",
+            "url": "{{servidor}}/users/1/can",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2022-11-03T18:09:41.352Z",
+            "modified": "2022-11-03T18:11:25.908Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n    \"action_code\" : \"user_index\"\r\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}

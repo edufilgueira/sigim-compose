@@ -1,4 +1,5 @@
 class DependencyType < ApplicationRecord
+	include ::Fonetical
 
 	# Associations
 

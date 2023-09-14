@@ -1,0 +1,96 @@
+{
+    "_id": "b2325616-63db-418e-b0ee-62667f01cf05",
+    "colName": "AbilityPermissions",
+    "created": "2022-11-03T18:16:37.958Z",
+    "sortNum": 20000,
+    "folders": [],
+    "requests": [
+        {
+            "_id": "d13a40f9-436d-48de-96b3-efb09df25699",
+            "colId": "b2325616-63db-418e-b0ee-62667f01cf05",
+            "containerId": "",
+            "name": "Show",
+            "url": "{{servidor}}/ability_permissions/1",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2022-11-03T18:16:37.980Z",
+            "modified": "2022-11-03T18:16:37.980Z",
+            "headers": [
+                {
+                    "name": "access-token",
+                    "value": "{{access_token}}"
+                },
+                {
+                    "name": "uid",
+                    "value": "{{email}}"
+                },
+                {
+                    "name": "client",
+                    "value": "{{client}}"
+                }
+            ]
+        },
+        {
+            "_id": "a6566ab6-eeb4-4ee6-9d41-aacf5210870f",
+            "colId": "b2325616-63db-418e-b0ee-62667f01cf05",
+            "containerId": "",
+            "name": "Update",
+            "url": "{{servidor}}/ability_permissions/1",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2022-11-03T18:16:37.983Z",
+            "modified": "2022-11-03T18:16:37.983Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "access-token",
+                    "value": "{{access_token}}"
+                },
+                {
+                    "name": "uid",
+                    "value": "{{email}}"
+                },
+                {
+                    "name": "client",
+                    "value": "{{client}}"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n    \"data\":[\r\n        {\"action_code\":\"student_available_for_phase_one\", \"checked\":true}, \r\n        {\"action_code\":\"student_available_for_phase_two\", \"checked\":true}, \r\n        {\"action_code\":\"student_available_for_phase_three\", \"checked\":true}, \r\n        {\"action_code\":\"student_civil_state\", \"checked\":true}, \r\n        {\"action_code\":\"student_completed_series\", \"checked\":true}, \r\n        {\"action_code\":\"student_shirt_sizes\", \"checked\":true}, \r\n        {\"action_code\":\"student_pants_sizes\", \"checked\":true}, \r\n        {\"action_code\":\"student_shoe_sizes\", \"checked\":true}, \r\n        {\"action_code\":\"student_bank_names\", \"checked\":true}, \r\n        {\"action_code\":\"student_account_types\", \"checked\":true}, \r\n        {\"action_code\":\"student_index\", \"checked\":true}, \r\n        {\"action_code\":\"neighborhood_without_area\", \"checked\":true}, {\"action_code\":\"neighborhood_index\", \"checked\":true}, {\"action_code\":\"benefit_create\", \"checked\":true}, {\"action_code\":\"benefit_update\", \"checked\":true}, {\"action_code\":\"benefit_show\", \"checked\":true}, {\"action_code\":\"benefit_destroy\", \"checked\":true}, {\"action_code\":\"benefit_generate_xls_benefits_payments\", \"checked\":true}, {\"action_code\":\"benefit_index_paid\", \"checked\":true}, {\"action_code\":\"benefit_index_pending\", \"checked\":true}, {\"action_code\":\"benefit_index\", \"checked\":true}, {\"action_code\":\"city_index\", \"checked\":true}, {\"action_code\":\"course_show\", \"checked\":true}, {\"action_code\":\"course_create\", \"checked\":true}, {\"action_code\":\"course_update\", \"checked\":true}, {\"action_code\":\"course_destroy\", \"checked\":true}, {\"action_code\":\"course_index\", \"checked\":true}, {\"action_code\":\"deficiency_index\", \"checked\":true}, {\"action_code\":\"document_show\", \"checked\":true}, {\"action_code\":\"document_create\", \"checked\":true}, {\"action_code\":\"document_update\", \"checked\":true}, {\"action_code\":\"document_destroy\", \"checked\":true}, {\"action_code\":\"document_index\", \"checked\":true}, {\"action_code\":\"student_document_file_data\", \"checked\":true}, {\"action_code\":\"student_document_show\", \"checked\":true}, {\"action_code\":\"student_document_create\", \"checked\":true}, {\"action_code\":\"student_document_update\", \"checked\":true}, {\"action_code\":\"student_document_destroy\", \"checked\":true}, {\"action_code\":\"student_document_index\", \"checked\":true}, {\"action_code\":\"season_partials\", \"checked\":true}, {\"action_code\":\"season_show\", \"checked\":true}, {\"action_code\":\"season_create\", \"checked\":true}, {\"action_code\":\"season_update\", \"checked\":true}, {\"action_code\":\"season_end_season\", \"checked\":true}, {\"action_code\":\"season_destroy\", \"checked\":true}, {\"action_code\":\"season_index\", \"checked\":true}, {\"action_code\":\"meeting_show\", \"checked\":true}, {\"action_code\":\"meeting_create\", \"checked\":true}, {\"action_code\":\"meeting_update\", \"checked\":true}, {\"action_code\":\"meeting_destroy\", \"checked\":true}, {\"action_code\":\"meeting_index\", \"checked\":true}, {\"action_code\":\"equipment_index_by_city_id\", \"checked\":true}, {\"action_code\":\"equipment_index_by_state_id\", \"checked\":true}, {\"action_code\":\"equipment_index_by_season_id\", \"checked\":true}, {\"action_code\":\"equipment_show\", \"checked\":true}, {\"action_code\":\"equipment_create\", \"checked\":true}, {\"action_code\":\"equipment_update\", \"checked\":true}, {\"action_code\":\"equipment_destroy\", \"checked\":true}, {\"action_code\":\"equipment_index\", \"checked\":true}, {\"action_code\":\"sport_index\", \"checked\":true}, {\"action_code\":\"state_index\", \"checked\":true}, {\"action_code\":\"phase_show\", \"checked\":true}, {\"action_code\":\"phase_index\", \"checked\":true}, {\"action_code\":\"inscription_search\", \"checked\":true}, {\"action_code\":\"inscription_years\", \"checked\":true}, {\"action_code\":\"inscription_show\", \"checked\":true}, {\"action_code\":\"inscription_create\", \"checked\":true}, {\"action_code\":\"inscription_update\", \"checked\":true}, {\"action_code\":\"inscription_pre_inscriptions\", \"checked\":true}, {\"action_code\":\"teacher_show\", \"checked\":true}, {\"action_code\":\"teacher_create\", \"checked\":true}, {\"action_code\":\"teacher_update\", \"checked\":true}, {\"action_code\":\"teacher_destroy\", \"checked\":true}, {\"action_code\":\"team_search\", \"checked\":true}, {\"action_code\":\"team_index_by_season_and_phase\", \"checked\":true}, {\"action_code\":\"team_index_by_teacher\", \"checked\":true}, {\"action_code\":\"team_index_by_area\", \"checked\":true}, {\"action_code\":\"team_show\", \"checked\":true}, {\"action_code\":\"team_create\", \"checked\":true}, {\"action_code\":\"team_update\", \"checked\":true}, {\"action_code\":\"team_destroy\", \"checked\":true}, {\"action_code\":\"user_show\", \"checked\":true}, {\"action_code\":\"user_create\", \"checked\":true}, {\"action_code\":\"user_update\", \"checked\":true}, {\"action_code\":\"user_destroy\", \"checked\":true}, {\"action_code\":\"team_index\", \"checked\":true}, {\"action_code\":\"teacher_index\", \"checked\":true}, {\"action_code\":\"team_finish_team\", \"checked\":true}, {\"action_code\":\"team_shifts\", \"checked\":true}, {\"action_code\":\"user_index\", \"checked\":true}, {\"action_code\":\"matrix_calculation_scholarship_value_create\", \"checked\":true}, {\"action_code\":\"matrix_calculation_scholarship_value_update\", \"checked\":true}, {\"action_code\":\"matrix_calculation_scholarship_value_destroy\", \"checked\":true}, {\"action_code\":\"matrix_calculation_scholarship_value_index\", \"checked\":true}, {\"action_code\":\"benefit_payment_index_by_benefit_payment_id\", \"checked\":true}, {\"action_code\":\"benefit_payment_create\", \"checked\":true}, {\"action_code\":\"relative_degree_kinships\", \"checked\":true}, {\"action_code\":\"ability_profile_show\", \"checked\":true}, {\"action_code\":\"ability_profile_create\", \"checked\":true}, {\"action_code\":\"ability_profile_update\", \"checked\":true}, {\"action_code\":\"ability_profile_destroy\", \"checked\":true}, {\"action_code\":\"ability_profile_index\", \"checked\":true}, {\"action_code\":\"ability_permission_show\", \"checked\":true}, {\"action_code\":\"ability_permission_create\", \"checked\":true}, {\"action_code\":\"ability_permission_update\", \"checked\":true}, {\"action_code\":\"ability_permission_destroy\", \"checked\":true}, {\"action_code\":\"ability_permission_index\", \"checked\":true}, {\"action_code\":\"presence_update\", \"checked\":true}, {\"action_code\":\"presence_index\", \"checked\":true}, {\"action_code\":\"professional_qualification_index\", \"checked\":true}, {\"action_code\":\"race_index\", \"checked\":true}, {\"action_code\":\"public_transport_fee_show\", \"checked\":true}, {\"action_code\":\"public_transport_fee_create\", \"checked\":true}, {\"action_code\":\"public_transport_fee_update\", \"checked\":true}, {\"action_code\":\"public_transport_fee_destroy\", \"checked\":true}, {\"action_code\":\"public_transport_fee_index\", \"checked\":true}, {\"action_code\":\"area_show\", \"checked\":true}, {\"action_code\":\"area_create\", \"checked\":true}, {\"action_code\":\"area_update\", \"checked\":true}, {\"action_code\":\"area_destroy\", \"checked\":true}, {\"action_code\":\"area_index\", \"checked\":true}\r\n    ]\r\n}"
+            }
+        },
+        {
+            "_id": "f3adc645-3e30-4b91-a0e2-47192d764d51",
+            "colId": "b2325616-63db-418e-b0ee-62667f01cf05",
+            "containerId": "",
+            "name": "Delete",
+            "url": "{{servidor}}/ability_permissions/1",
+            "method": "DELETE",
+            "sortNum": 50000,
+            "created": "2022-11-03T18:16:37.984Z",
+            "modified": "2022-11-03T18:16:37.984Z",
+            "headers": [
+                {
+                    "name": "access-token",
+                    "value": "{{access_token}}"
+                },
+                {
+                    "name": "uid",
+                    "value": "{{email}}"
+                },
+                {
+                    "name": "client",
+                    "value": "{{client}}"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": ""
+            }
+        }
+    ]
+}

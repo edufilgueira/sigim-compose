@@ -1,0 +1,284 @@
+{
+    "_id": "1df2628f-d9e1-4ac3-b8fc-f84b5d930036",
+    "colName": "Auth",
+    "created": "2022-11-03T18:22:54.689Z",
+    "sortNum": 40000,
+    "folders": [
+        {
+            "_id": "e596e94a-420d-46fe-82fc-3c42eced59ab",
+            "name": "Password",
+            "containerId": "",
+            "created": "2022-11-03T18:22:54.705Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "0ab58bd3-483c-4d18-b1b3-b7367442e328",
+            "name": "Session",
+            "containerId": "",
+            "created": "2022-11-03T18:22:54.706Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "bf1c3df5-f545-4e6c-8bfb-2f2333137b00",
+            "name": "Validate",
+            "containerId": "",
+            "created": "2022-11-03T18:22:54.707Z",
+            "sortNum": 30000
+        },
+        {
+            "_id": "575c6fc0-371b-49b4-b357-b651c4f021c4",
+            "name": "User",
+            "containerId": "",
+            "created": "2022-11-03T18:22:54.708Z",
+            "sortNum": 40000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "9bc90a42-0fd2-4da9-9abb-b2ea086cb106",
+            "colId": "1df2628f-d9e1-4ac3-b8fc-f84b5d930036",
+            "containerId": "e596e94a-420d-46fe-82fc-3c42eced59ab",
+            "name": "Update",
+            "url": "{{servidor}}/auth/",
+            "method": "PUT",
+            "sortNum": 10000,
+            "created": "2022-11-03T18:22:54.716Z",
+            "modified": "2022-11-03T18:22:54.716Z",
+            "headers": [
+                {
+                    "name": "access-token",
+                    "value": "{{access_token}}"
+                },
+                {
+                    "name": "uid",
+                    "value": "{{email}}"
+                },
+                {
+                    "name": "client",
+                    "value": "{{client}}"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n    \"name\": \"Admin\",\r\n    \"cpf\": \"111.111.111-11\",\r\n    \"current_password\": \"{{password}}\",\r\n    \"password\": \"{{password}}\",\r\n    \"password_confirmation\": \"{{password}}\"\r\n}\r\n"
+            }
+        },
+        {
+            "_id": "2cc4fca3-d114-4a84-99f1-9b55c23ac279",
+            "colId": "1df2628f-d9e1-4ac3-b8fc-f84b5d930036",
+            "containerId": "e596e94a-420d-46fe-82fc-3c42eced59ab",
+            "name": "Forget",
+            "url": "{{servidor}}/auth/password",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2022-11-03T18:22:54.717Z",
+            "modified": "2022-11-03T18:22:54.717Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n    \"email\": \"{{email}}\"\r\n}"
+            }
+        },
+        {
+            "_id": "39bfcd17-b309-4bd8-b736-56820087139a",
+            "colId": "1df2628f-d9e1-4ac3-b8fc-f84b5d930036",
+            "containerId": "e596e94a-420d-46fe-82fc-3c42eced59ab",
+            "name": "Confirmation",
+            "url": "{{servidor}}/auth/confirmation",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2022-11-03T18:22:54.718Z",
+            "modified": "2022-11-03T18:22:54.718Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n    \"email\": \"{{email}}\"\r\n}"
+            }
+        },
+        {
+            "_id": "3c537538-6e5a-4e9f-ac17-1fd334d25795",
+            "colId": "1df2628f-d9e1-4ac3-b8fc-f84b5d930036",
+            "containerId": "e596e94a-420d-46fe-82fc-3c42eced59ab",
+            "name": "Resset",
+            "url": "{{servidor}}/auth/password",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2022-11-03T18:22:54.719Z",
+            "modified": "2022-11-03T18:22:54.719Z",
+            "headers": [
+                {
+                    "name": "access-token",
+                    "value": "{{access_token}}"
+                },
+                {
+                    "name": "uid",
+                    "value": "{{email}}"
+                },
+                {
+                    "name": "client",
+                    "value": "{{client}}"
+                },
+                {
+                    "name": "Content_Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "token",
+                    "value": "{{access_token}}"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n    \"password\": \"{{password}}\",\r\n    \"password_confirmation\": \"{{password}}\"\r\n}"
+            }
+        },
+        {
+            "_id": "3f241a7b-b55b-4a5c-a916-7cb68a33322a",
+            "colId": "1df2628f-d9e1-4ac3-b8fc-f84b5d930036",
+            "containerId": "0ab58bd3-483c-4d18-b1b3-b7367442e328",
+            "name": "Sign in",
+            "url": "{{servidor}}/auth/sign_in",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2022-11-03T18:22:54.720Z",
+            "modified": "2022-11-07T17:28:54.829Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"email\": \"{{email}}\",\n    \"password\": \"{{password}}\"\n}\n\n\n",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "efb89d22-a7cb-40de-93ad-6710a195692c",
+            "colId": "1df2628f-d9e1-4ac3-b8fc-f84b5d930036",
+            "containerId": "0ab58bd3-483c-4d18-b1b3-b7367442e328",
+            "name": "Sign out",
+            "url": "{{servidor}}/auth/sign_out",
+            "method": "DELETE",
+            "sortNum": 60000,
+            "created": "2022-11-03T18:22:54.721Z",
+            "modified": "2022-11-15T12:49:52.923Z",
+            "headers": [
+                {
+                    "name": "access-token",
+                    "value": "{{access_token}}"
+                },
+                {
+                    "name": "uid",
+                    "value": "{{email}}"
+                },
+                {
+                    "name": "client",
+                    "value": "{{client}}"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "5a14d9e1-39be-4f5c-b807-dcbc41200e15",
+            "colId": "1df2628f-d9e1-4ac3-b8fc-f84b5d930036",
+            "containerId": "bf1c3df5-f545-4e6c-8bfb-2f2333137b00",
+            "name": "Validate token",
+            "url": "{{servidor}}/auth/validate_token",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2022-11-03T18:22:54.722Z",
+            "modified": "2022-11-03T18:22:54.722Z",
+            "headers": [
+                {
+                    "name": "access-token",
+                    "value": "{{access_token}}"
+                },
+                {
+                    "name": "uid",
+                    "value": "{{email}}"
+                },
+                {
+                    "name": "client",
+                    "value": "{{client}}"
+                }
+            ]
+        },
+        {
+            "_id": "3571debd-84d3-46f4-aadf-6e527c6de7f2",
+            "colId": "1df2628f-d9e1-4ac3-b8fc-f84b5d930036",
+            "containerId": "575c6fc0-371b-49b4-b357-b651c4f021c4",
+            "name": "Create",
+            "url": "{{servidor}}/auth",
+            "method": "POST",
+            "sortNum": 80000,
+            "created": "2022-11-03T18:22:54.723Z",
+            "modified": "2022-12-13T15:02:26.437Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n   \"ability_profile_id\" : 1,\n   \"active\" : true,\n   \"cpf\" : \"111.111.111-13\",\n   \"email\" : \"admin3@admin.com\",\n   \"name\" : \"Admin\",\n   \"password\" :  \"{{password}}\",\n   \"password_confirmation\" : \"{{password}}\",\n   \"phone_number\" : \"(85) 98585.8585\",\n   \"confirmed_at\" : \"{{confirmed_at}}\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "a74905bc-6ad3-487c-aeb4-4f8c5301cc52",
+            "colId": "1df2628f-d9e1-4ac3-b8fc-f84b5d930036",
+            "containerId": "575c6fc0-371b-49b4-b357-b651c4f021c4",
+            "name": "Update",
+            "url": "{{servidor}}/auth",
+            "method": "PUT",
+            "sortNum": 90000,
+            "created": "2022-11-03T18:22:54.724Z",
+            "modified": "2022-11-03T18:22:54.724Z",
+            "headers": [
+                {
+                    "name": "access-token",
+                    "value": "{{access_token}}"
+                },
+                {
+                    "name": "uid",
+                    "value": "{{email}}"
+                },
+                {
+                    "name": "client",
+                    "value": "{{client}}"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n    \"name\": \"Admin\",\r\n    \"nickname\": \"Admin\",\r\n    \"phone_number\": \"8599766-5307\",\r\n    \"ability_profile_id\": 1,\r\n    \"password\": \"1111111111\",\r\n    \"password_confirmation\": \"1111111111\"\r\n}"
+            }
+        },
+        {
+            "_id": "dad36551-de05-426a-b625-61cfd9e062db",
+            "colId": "1df2628f-d9e1-4ac3-b8fc-f84b5d930036",
+            "containerId": "575c6fc0-371b-49b4-b357-b651c4f021c4",
+            "name": "Delete",
+            "url": "{{servidor}}/auth",
+            "method": "DELETE",
+            "sortNum": 100000,
+            "created": "2022-11-03T18:22:54.725Z",
+            "modified": "2022-11-03T18:22:54.725Z",
+            "headers": [
+                {
+                    "name": "access-token",
+                    "value": "{{access_token}}"
+                },
+                {
+                    "name": "uid",
+                    "value": "{{email}}"
+                },
+                {
+                    "name": "client",
+                    "value": "{{client}}"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n    \"name\": \"Eduardo Santos\"\r\n}"
+            }
+        }
+    ]
+}
